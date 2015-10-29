@@ -1,9 +1,8 @@
-//index.php
 <?php get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-<?php title(); ?>
+<?php wp_title(); ?>
 
 <div id="wrapper">
 

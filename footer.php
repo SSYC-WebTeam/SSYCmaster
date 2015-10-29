@@ -1,5 +1,3 @@
-//footer.php
-
 <?php 
 
 ?>

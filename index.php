@@ -1,11 +1,20 @@
-//index.php
 <?php get_header(); ?>
-
-<?php get_sidebar(); ?>
-
-<?php title(); ?>
-
 <div id="wrapper">
+	<div id="content">
+
+	<?php if (have_posts()) : ?>
+		
+		<?php while (have_posts()) : the_post(); ?>
+				
+			<h2><a href="<?php the_permalink() ?>" <?php the_title(); ?>></a></h2>
+	
+	<?php endwhile; ?>
+	
+	<?php else : ?>
+	
+	<?php endif; ?>
+	
+	</div>
 
 	<nav>
 
@@ -106,6 +115,8 @@
     <img src="" alt="" >
     <figcaption>Blank</figcaption>
     </figure>
+
+    <?php get_sidebar(); ?>
 </aside>
 </div><!--end #wrapper div-->
 

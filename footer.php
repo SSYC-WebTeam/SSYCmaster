@@ -5,14 +5,9 @@
 <div id="footer">
 <hr />
 	<div class="footerTitle">
-		<h4>Home</h4>
+		<h4>ABOUT</h4>
 	</div>
 	
-		<ul class="footerText">	
-		    <li><a href="index1.php">Home</a></li>
-			<li><a href="index2.php">Home</a></li>
-		</ul>
-
 	<div class="footerTitle">
 		<h4>MEMBERSHIP</h4>
 	</div>

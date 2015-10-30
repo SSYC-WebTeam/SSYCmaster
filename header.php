@@ -1,4 +1,3 @@
-//header.php
 <?php
 /*
     Template Designed by SSYC WebTeam
@@ -9,11 +8,17 @@
 ?><!DOCTYPE html>
 
 <html>
-
 <head>
+
+<!-- Description meta-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width"/>
+<meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
+
 <link href='http://fonts.googleapis.com/css?family=Varela+Round|Carter+One|Kalam|Lemon|Monoton|Wire+One|Tulpen+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Audiowide|Michroma|Julius+Sans+One' rel='stylesheet' type='text/css'>
-<title>Seattle Singles YC</title>
+
+<title><?php wp_title() ?></title>
 
 <link rel="stylesheet"  href="style.css" >
 </head>

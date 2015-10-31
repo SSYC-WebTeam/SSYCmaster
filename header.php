@@ -20,7 +20,7 @@
 
 <title><?php wp_title() ?></title>
 
-<link rel="stylesheet"  href="style.css" >
+<link rel="stylesheet"  href="style.css" type="text/css">
 </head>
 
 <body>
@@ -30,19 +30,5 @@
 <div id="logo">
 <p>SSYC</p>
 </div>
-    
-    <nav>
-
-	<ul>
-    <li><a href="index.php">HOME</a></li> 
-    <li><a href="">ABOUT US</a></li>
-    <li><a href="">MEMBERSHIP</a></li>
-	<li><a href="">BOATING</a></li>
-    <li><a href="">EVENTS</a></li>
-    <li><a href="">NEWS</a></li>
-    <li><a href="">CONTACT US</a></li>
-	</ul>
-
-	</nav>
 
 </header>

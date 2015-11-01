@@ -1,10 +1,5 @@
 <?php
-/*
-    Template Designed by SSYC WebTeam
-    Created for ITC210/WEB120
-    Credits:
-    version 1.0
-*/
+
 ?><!DOCTYPE html>
 
 <html>
@@ -20,15 +15,18 @@
 
 <title><?php wp_title() ?></title>
 
-<link rel="stylesheet"  href="style.css" type="text/css">
+<link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
+<?php wp_head(); ?>
+    
 </head>
 
 <body>
-
-<header>
-
-<div id="logo">
-<p>SSYC</p>
-</div>
-
-</header>
+    <header>
+        <div id="logo">
+            <p>SSYC</p>
+        </div>
+    </header>
+    
+ <nav>
+	<?php wp_nav_menu( array('theme_location' => 'main')) ?>
+</nav>

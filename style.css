@@ -1,9 +1,15 @@
 /*
-Theme Name: SSYC
-Author: SSYC Team
-Description: Seattle Singles Yacht Club
 
+Theme Name: SSYC
+Theme URI: http://54.148.24.144/wordpress
+Author: SSYC Team
+Description: Seattle Singles Yacht Club Website
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: SSYCmaster
 Plugins used:
+
   Akismet Plugin - http://akismet.com
     Anti spam plugin Basic free edition
 
@@ -90,7 +96,7 @@ background:azure;
 #wrapper {
     min-height: 100%;
     height: auto;
-	width:940px;
+	width:980px;
     margin: 0 auto;
 }
 #logo {
@@ -108,7 +114,7 @@ background:azure;
 }
 header {
 background:rgba(240, 255, 255, 0.5);
-	height:200px;
+	height:450px;
 	width:auto;
 	margin-bottom:1px;
 
@@ -120,7 +126,7 @@ body {
 nav {
 background: rgba(8, 255, 228, 0.5);
 	height:50px;
-	width:1250px;
+	width: auto;
 	margin-bottom:1px;
 	text-decoration: none;	
 }
@@ -134,7 +140,7 @@ nav li{
     font-family: 'Audiowide', cursive;
 }
 aside {
-	width:307px;
+	width:305px;
 	float: left;
 	background:lightblue;
 	border-right:2px solid purple;
@@ -154,7 +160,7 @@ aside h3 {
 main {
 background:azure;
 	height:100%;
-	width:939px;
+	width:673px;
 	float:right;
 	color:purple;
 	opacity:0.9;
@@ -182,13 +188,16 @@ background: lightblue;
     padding:.3em 0;
     text-align: center;
 }
+footer {
+background:rgba(240, 255, 255, 0.5);
+    height:200px;
+    clear:both;
+    margin-top: 1px;
+}
 div .footer {
 background:rgba(240, 255, 255, 0.5);
 	margin: 0 auto;
 	height:450px;
-	width:100%;
-	position:center;
-	clear:both;
 }
 #footer {
 	display: inline-block;

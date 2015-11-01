@@ -1,9 +1,10 @@
+</div>
 <!-- footer starts here -->		
 <?php 
 
 ?>
+<footer>
 <div id="footer">
-    <footer>
 	<div class="footerTitle">
 		<h4>ABOUT</h4>
 	</div>
@@ -52,8 +53,8 @@
 			<li><a href="contact3.php">Home</a></li>				
 		</ul>
     </div>
-    </footer>
 </div><!-- close  footer div -->
+</footer>
 
 <?php wp_footer(); ?>
 

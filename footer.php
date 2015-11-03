@@ -5,7 +5,7 @@
 ?>
 <footer>
 <div id="footer">
-	<div class="footerTitle">
+	<!--<div class="footerTitle">
 		<h4>ABOUT</h4>
 	</div>
 	
@@ -52,7 +52,7 @@
 			<li><a href="contact2.php">Home</a></li>
 			<li><a href="contact3.php">Home</a></li>				
 		</ul>
-    </div>
+    </div>-->
 </div><!-- close  footer div -->
 </footer>
 

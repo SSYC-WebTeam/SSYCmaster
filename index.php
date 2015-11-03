@@ -4,9 +4,8 @@
 <aside>
 <?php get_sidebar(); ?>
 	<h3>BEST of the WEST! Destinations!</h3>
-	
 	<p>
-	"On the other hand, we denounce with righteous indignation and 
+	On the other hand, we denounce with righteous indignation and 
 	dislike men who are so beguiled and demoralized by the charms 
 	of pleasure of the moment, so blinded by desire, that they cannot 
 	foresee the pain and trouble that are bound to ensue; and equal 
@@ -18,14 +17,8 @@
 	pleasure is to be welcomed and every pain avoided.  The wise man therefore always 
 	holds in these matters to this principle of selection: he rejects 
 	pleasures to secure other greater pleasures, or else he endures 
-	pains to avoid worse pains."
+	pains to avoid worse pains.
 	</p>
-    <figure>
-    <img src="" alt="" >
-    <figcaption>Blank</figcaption>
-    </figure>
-
-    
 </aside>
     
 <main>
@@ -33,9 +26,9 @@
 
 	<?php if (have_posts()) : ?>
 		
-		<?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 				
-			<h2><a href="<?php the_permalink() ?>" <?php the_title(); ?>></a></h2>
+    <h2><a href="<?php the_permalink() ?>" <?php the_title(); ?>></a></h2>
 	
 	<?php endwhile; ?>
 	

@@ -1,11 +1,8 @@
-<?php
-
-?><!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
 <head>
 
-<!-- Description meta-->
+<!--Description meta-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width"/>
 <meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
@@ -15,18 +12,23 @@
 
 <title><?php wp_title() ?></title>
 
-<link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
-<?php wp_head(); ?>
-    
+<!--Style sheets-->
+
 </head>
 
-<body>
-    <header>
-        <div id="logo">
-            <p>SSYC</p>
-        </div>
-    </header>
-    
+<body <?php body_class($class); ?>>
+<div id="container">
+	<header class="">
+	<hgroup class="screen-reader-text">
+		<h1>SEATTLE SINGLES YACHT CLUB</h1>
+		<h2>Member Login</h2>
+		<div class="logo"><!--Logo-->
+			<h3>Logo</h3>
+			<img src="http://dummyimage.com/100x100" alt=" " />		
+     </div>		
+	</hgroup>
+	</header>
+   
  <nav id="nav-main">
 	<?php wp_nav_menu( array('theme_location' => 'main')) ?>
 </nav>

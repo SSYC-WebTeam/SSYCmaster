@@ -1,17 +1,11 @@
-</div><!-- close wrapper div -->
 <!-- footer starts here -->		
-<?php 
-
-?>
 <footer>
-<div id="footer">
-
-        
-<nav id="nav-footer">
-	<?php wp_nav_menu( array('theme_location' => 'footer-menu')) ?>
-</nav>
-
-</div>
+<hr />
+	<div id="footer">	        
+		<nav id="nav-footer">
+			<?php wp_nav_menu( array('theme_location' => 'footer')) ?>
+		</nav>
+	</div>
 </footer>
 
 <?php wp_footer(); ?>

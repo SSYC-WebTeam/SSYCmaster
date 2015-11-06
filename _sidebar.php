@@ -1,31 +1,33 @@
 <!-- begin sidebar -->
 
-<div id="sidebar">
+<!-- #right sidebar -->
+<aside class="sidebar left">
+	<div class="screen-reader-text">
+	<h2 class="event embossed">UPCOMING EVENTS</h2>
+	<ul class="sidebarNav">
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+	</ul>
+	</div>
 
-	<ul>
-		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
+<!-- #main sidebar -->
+<aside class="sidebar main">
+	<div class="screen-reader-text">
+	<h2 class="news embossed">RECENT NEWS</h2>
+	<ul class="sidebarNav">
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+	</ul>
+	</div>
 
-		<li><h2><?php ?></h2>
-			<ul>
-				<?php ?>
-			</ul>
-		</li>
-
-		<li><h2><?php ?></h2>
-			<ul>
-				<?php ?>
-			</ul>
-		</li>
-
-		<li><h2><?php ?></h2>
-			<<ul>
-				<?php ?>
-			</ul>
-		</li>	
-
-	<?php get_links_list(); ?>
-
-		<?php endif; ?>
-	</ul>		
-</div>		
+<!-- #right sidebar -->
+<aside class="sidebar right">
+	<div class="screen-reader-text">
+	<h2 class="seo embossed">SEO PARAGRAPH</h2>
+	<ul class="sidebarNav">
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+		<li><a href="#">Pellentesque habitant morbi</a></li>
+	</ul>
+	</div>	
+</aside>
 <!-- end sidebar -->

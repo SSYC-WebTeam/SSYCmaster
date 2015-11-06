@@ -1,25 +1,31 @@
 <?php get_header(); ?>
-<div id="wrapper">
-    
+<div id="wrapper">    
+		<?php if (have_posts()) : ?>
+		
+        <?php while (have_posts()) : the_post(); ?>
+
+	<article class="post">			
+        <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title();?></a></h2>
+
+		<div class="entry"><!--post-->
+			<h3>content</h3>
+			<?php the_content();?>
+		</div>
+	</article>
+
+	<?php endwhile; ?>
+	
+	<?php else : ?>
+		<h2 class="center">Not Found</h2>
+		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+			<?php get_search_form(); ?>	
+	<?php endif; ?>
+</div><!-- end wrapper div -->
+
+
 <aside>
     <h3>Destinations!</h3>
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 </aside>
-    
-<main>
-    <div id="content">
-	<?php if (have_posts()) : ?>	
-        <?php while (have_posts()) : the_post(); ?>	
-        
-        <h2><a href="<?php the_permalink() ?>" <?php the_title(); ?>></a></h2>
-	
-	    <?php endwhile; ?>
-	<?php else : ?>
-	
-	<?php endif; ?>
-    </div>
-</main>
-    
-</div><!-- end wrapper div -->
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -20,15 +20,19 @@
 <div id="container">
 	<header class="">
 	<hgroup class="screen-reader-text">
-		<h1>SEATTLE SINGLES YACHT CLUB</h1>
-		<h2>Member Login</h2>
+		<h1 id="site-title">
+		<a href="<?php bloginfo('url'); ?>" title="<?php
+bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
+		<h2 id="site-description"><?php bloginfo( 'description' ); ?>
+		</h2>		
 		<div class="logo"><!--Logo-->
 			<h3>Logo</h3>
 			<img src="http://dummyimage.com/100x100" alt=" " />		
-     </div>		
+     	</div>		
 	</hgroup>
 	</header>
    
- <nav id="nav-main">
+<nav id="nav-main">
 	<?php wp_nav_menu( array('theme_location' => 'main')) ?>
 </nav>
+

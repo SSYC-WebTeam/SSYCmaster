@@ -1,32 +1,61 @@
 <?php
-
-?><!DOCTYPE html>
-
+?>
+<!DOCTYPE html>
 <html>
 <head>
+<title>Template for page.html | Seattle Singles Yacht Club</title>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow"/>
 
-<!-- Description meta-->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width"/>
-<meta http-equiv="content-type" content="text/html; charset=US-ASCII" />
+<!-- Remy Sharp Shim --> 
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
 
-<link href='http://fonts.googleapis.com/css?family=Varela+Round|Carter+One|Kalam|Lemon|Monoton|Wire+One|Tulpen+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Audiowide|Michroma|Julius+Sans+One' rel='stylesheet' type='text/css'>
+ <link href="style.css" rel="stylesheet" />   
+<!-- call jquery for the toggle nav -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
-<title><?php wp_title() ?></title>
+<!-- Toggle Menu Script -->
+<script type="text/javascript">
+$(window).load(function() { // enable function upon window load
+$("#toggle-icon").click(function() { // when link is clicked...
+$("#nav-toggle").toggle(); // ... open or close the navigation list
+});
+});
+</script>
+<!-- End Toggle Menu Script -->
 
-<link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
-<?php wp_head(); ?>
-    
+<!-- Remy Sharp Shim --> 
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 </head>
+<body id="page-template">
 
-<body>
-    <header>
-        <div id="logo">
-            <p>SSYC</p>
-        </div>
-    </header>
+	<div id="wrapper">
+        <!-- HEADER -->
+        <header>
+        
+        	<!-- LOGO -->
+        	<h1>
+            	<a href="javascript:;">
+                	<img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
+                    <span>Seattle Singles Yacht Club</span>
+            	</a>
+            </h1>            
     
- <nav id="nav-main">
-	<?php wp_nav_menu( array('theme_location' => 'main')) ?>
-</nav>
+         	<!-- NAV MAIN -->
+            <nav id="nav-main">
+            
+            	<ul>
+                	<li><a href="javascript:;">About SSYC</a></li>
+                    <li><a href="javascript:;">Membership</a></li>
+                    <li><a href="javascript:;">Boating</a></li>
+                    <li><a href="javascript:;">Events</a></li>
+                    <li><a href="javascript:;">Calendar</a></li>
+                    <li class="end"><a href="javascript:;">Contact Us</a></li>
+                </ul>
+    </nav> <!-- end #nav-main -->
+</header> <!-- end header -->

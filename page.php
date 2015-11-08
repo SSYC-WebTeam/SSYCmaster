@@ -34,16 +34,16 @@
 			</aside> <!-- end #primary --> 
                                
             <div id="content">
-+
-+	          <?php if (have_posts()) : ?>
-+		
-+		      <?php while (have_posts()) : the_post(); ?>
-+				
-+			    <h2><a href="<?php the_permalink() ?>" ></a><?php the_title(); ?></h2>
-+	
-+	          <?php endwhile; ?>
-+	
-+	          <?php endif; ?>                        
+
+	          <?php if (have_posts()) : ?>
+		
+		      <?php while (have_posts()) : the_post(); ?>
+				
+			    <h2><a href="<?php the_permalink() ?>" ></a><?php the_title(); ?></h2>
+	
+	          <?php endwhile; ?>
+	
+	          <?php endif; ?>                        
                         
             </div> <!-- end #content -->
                 

@@ -39,7 +39,7 @@
 +		
 +		      <?php while (have_posts()) : the_post(); ?>
 +				
-+			    <h2><a href="<?php the_permalink() ?>" <?php the_title(); ?>></a></h2>
++			    <h2><a href="<?php the_permalink() ?>" ></a><?php the_title(); ?></h2>
 +	
 +	          <?php endwhile; ?>
 +	

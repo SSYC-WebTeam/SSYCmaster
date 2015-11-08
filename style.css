@@ -4,6 +4,14 @@ Theme Name: SSYC
 Description: Custom theme for Seattle Singles Yacht Club - 2015
 Version: 1.0
 Author: Maureen Crist
+
+J
+     ^---^
+    |  OvO\
+    | ):;:(| 
+    |/ ...\| 
+   ====w=w===
+
 */
 
 body, body * {
@@ -94,7 +102,7 @@ body {
 footer {
 	clear: both;
 	width: 100%;
-    height: 150px;
+    height: auto;
 }
 
 .spotlight {
@@ -309,10 +317,9 @@ header h1 a:focus {
 
 #logo {
 	margin: 0 auto;
-    height: 100px;
-    width: 150px;
+    height: 100px;<!-- logo will not display. NEEDS FIX!!! --> 
+    width: 150px;<!-- delete H and W after logo works JCB -->
 }
-
 
 /* RESPONSIVE TOGGLE MAIN MENU */
 
@@ -462,12 +469,10 @@ header h1 a:focus {
 	margin: 7px 0 0 0; /* reset margin and padding, just in case */
 	margin: 0.4375em 0 0 0;
 	float: left;
-	text-align: center;
 	width: 16.66666666666667%;
 }
 
 #nav-footer a {
-	display: inline;
 	text-transform: uppercase;
 }
 

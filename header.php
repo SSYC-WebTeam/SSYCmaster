@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Seattle Single YC</title>
+<title><?php wp_title(); ?></title>
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex, nofollow"/>
 
@@ -65,7 +65,3 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
                     
                 </ul> <!-- end #nav-toggle -->
         	</nav>
-        
-         <div id="breadcrumbs">
-            	<p>Placeholder for breadcrumbs nav</p>
-         </div> <!-- #breadcrumbs -->

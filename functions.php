@@ -1,8 +1,13 @@
 <?php
 
-function register_my_menu() {
-  register_nav_menu('main', __('Main Menu'));
+function register_my_menus() {
+  register_nav_menus(
+      array(
+        'main' => __('Main Menu'),
+        'footer-menu' => __('Footer Menu')
+        )
+      );
 }
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_my_menus' );
 
 ?>

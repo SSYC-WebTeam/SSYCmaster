@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Template for front.html | Seattle Singles Yacht Club</title>
+<title>index.php Seattle Singles Yacht Club</title>
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex, nofollow"/>
 

@@ -1,7 +1,5 @@
-<?php get_header(); ?>   
-<body id="page-template">
+<?php get_header(); ?>
 
-	<div id="wrapper">
         <div id="middle">
             
             <aside id="primary">

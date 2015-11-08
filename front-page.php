@@ -1,48 +1,6 @@
 <?php get_header(); ?>
-<body id="front-template">
-
-	<div id="wrapper">
-        <!-- HEADER -->
-        <header>
-        
-        	<!-- LOGO -->
-			<h1>
-            	<a href="javascript:;">
-                	<img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
-                    <span>Seattle Singles Yacht Club</span>
-            	</a>
-            </h1>              
-         	<!-- NAV MAIN -->
-            <nav id="nav-main">
-            
-            	<ul>
-                	<li><a href="javascript:;">About SSYC</a></li>
-                    <li><a href="javascript:;">Membership</a></li>
-                    <li><a href="javascript:;">Boating</a></li>
-                    <li><a href="javascript:;">Events</a></li>
-                    <li><a href="javascript:;">Calendar</a></li>
-                    <li class="end"><a href="javascript:;">Contact Us</a></li>
-                </ul>
-            
-            </nav> <!-- end #nav-main -->
-    
-        </header> <!-- end header -->
         
         <div id="middle">
-        
-        	<!-- NAV MOBILE -->
-    
-    		<nav id="nav-mobile">
-                <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
-                <ul id="nav-toggle">
-                    <li><a href="javascript:;">About SSYC</a></li>
-                    <li><a href="javascript:;">Membership</a></li>
-                    <li><a href="javascript:;">Boating</a></li>
-                    <li><a href="javascript:;">Events</a></li>
-                    <li><a href="javascript:;">Calendar</a></li>
-                    <li><a href="javascript:;">Contact Us</a></li>
-                </ul>
-        	</nav>
             
         	<img src="images/placeholder-spotlight-image.png" alt="image placeholder for spotlight image" class="spotlight"/>
            	
@@ -66,4 +24,5 @@
            	</div> <!-- end #main-front -->
             
         </div> <!-- end #middle -->
-    <?php get_footer(); ?>
+        
+<?php get_footer(); ?>

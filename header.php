@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Template for page.html | Seattle Singles Yacht Club</title>
+<title>Seattle Single YC</title>
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex, nofollow"/>
 
@@ -12,7 +12,7 @@
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 
-<link href="style.css" rel="stylesheet" /> 
+<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css" media="all"/> 
     
 <!-- call jquery for the toggle nav -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -25,17 +25,24 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
 });
 });
 </script>
+    
 <!-- End Toggle Menu Script -->
 
 </head>
+    
+<body id="front-template">
+    
+    <div id="wrapper">
+     
     <!-- HEADER -->
     <header>
         
         <!-- LOGO -->
         	<h1>
             	<a href="javascript:;">
+                    <span>Seattle Singles</span>
                 	<img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
-                    <span>Seattle Singles Yacht Club</span>
+                    <span>Yacht Club</span>
             	</a>
             </h1>            
     
@@ -53,15 +60,12 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
     		<nav id="nav-mobile">
                 <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
                 <ul id="nav-toggle">
-                    <li><a href="javascript:;">About SSYC</a></li>
-                    <li><a href="javascript:;">Membership</a></li>
-                    <li><a href="javascript:;">Boating</a></li>
-                    <li><a href="javascript:;">Events</a></li>
-                    <li><a href="javascript:;">Calendar</a></li>
-                    <li><a href="javascript:;">Contact Us</a></li>
+                    
+                    <?php wp_nav_menu( array('theme_location' => 'main')) ?>
+                    
                 </ul> <!-- end #nav-toggle -->
         	</nav>
-            
-            <div id="breadcrumbs">
+        
+         <div id="breadcrumbs">
             	<p>Placeholder for breadcrumbs nav</p>
-            </div> <!-- #breadcrumbs -->
+         </div> <!-- #breadcrumbs -->

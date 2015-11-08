@@ -93,11 +93,13 @@ body {
 
 footer {
 	clear: both;
-	width: 100%;	
+	width: 100%;
+    height: 150px;
 }
 
 .spotlight {
-	width: 100%;	
+	width: 100%;
+    height: 350px;<!-- change when plugin is installed -->
 }
 
 #main-front {
@@ -112,7 +114,6 @@ footer {
 	float: left;
 	padding: 10px;
 	padding: 0.625em;
-	border-right: 1px solid #d7d7d7;  /* #d7d7d7 = super light gray */
 }
 
 .one-third-middle {
@@ -121,7 +122,6 @@ footer {
 	float: left;
 	padding: 10px;
 	padding: 0.625em;
-	border-right: 1px solid #d7d7d7;  /* #d7d7d7 = super light gray */
 }
 
 .one-third-right {
@@ -286,6 +286,7 @@ iframe,
 
 header {
 	width: 100%;
+    align-content: center;
 	overflow: hidden;
 }
 
@@ -298,7 +299,7 @@ header h1 {
 }	
 
 header h1 span {
-	display: none;	
+	display: inline-block;
 }
 
 header h1 a:hover,
@@ -308,6 +309,8 @@ header h1 a:focus {
 
 #logo {
 	margin: 0 auto;
+    height: 100px;
+    width: 150px;
 }
 
 
@@ -589,7 +592,7 @@ header h1 a:focus {
 		float: none;
 		width: 100%;
 		border-right: none;
-		border-bottom: 1px solid #d7d7d7;	
+		border-bottom: ;	
 	}
 	
 	.one-third-middle {
@@ -597,7 +600,7 @@ header h1 a:focus {
 		float: none;
 		width: 100%;
 		border-right: none;
-		border-bottom: 1px solid #d7d7d7;
+		border-bottom: ;
 	}
 	
 	.one-third-right {

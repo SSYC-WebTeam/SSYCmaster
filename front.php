@@ -1,6 +1,8 @@
+<?php get_header(); ?>
 <body id="front-template">
+
 	<div id="wrapper">
-        <!-- HEADER --><?php get_header ?>
+        <!-- HEADER -->
         <header>
         
         	<!-- LOGO -->
@@ -60,6 +62,8 @@
                         <h3><a href="javascript:;">SEO PARAGRAPH</a></h3>
                         <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
                     </div> <!-- end .one-third -->
+                
            	</div> <!-- end #main-front -->
+            
         </div> <!-- end #middle -->
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

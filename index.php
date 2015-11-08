@@ -1,7 +1,65 @@
-<?php get_header(); ?>
-<<<<<<< HEAD
-<div id="middle">
-    <!-- NAV MOBILE -->
+<?php
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Template for front.html | Seattle Singles Yacht Club</title>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow"/>
+
+<!-- Remy Sharp Shim --> 
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+
+ <link href="style.css" rel="stylesheet" />   
+<!-- call jquery for the toggle nav -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<!-- Toggle Menu Script -->
+<script type="text/javascript">
+$(window).load(function() { // enable function upon window load
+$("#toggle-icon").click(function() { // when link is clicked...
+$("#nav-toggle").toggle(); // ... open or close the navigation list
+});
+});
+</script>
+<!-- End Toggle Menu Script -->
+
+</head>
+<body id="front-template">
+
+	<div id="wrapper">
+        <!-- HEADER -->
+        <header>
+        
+        	<!-- LOGO -->
+			<h1>
+            	<a href="javascript:;">
+                	<img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
+                    <span>Seattle Singles Yacht Club</span>
+            	</a>
+            </h1>              
+         	<!-- NAV MAIN -->
+            <nav id="nav-main">
+            
+            	<ul>
+                	<li><a href="javascript:;">About SSYC</a></li>
+                    <li><a href="javascript:;">Membership</a></li>
+                    <li><a href="javascript:;">Boating</a></li>
+                    <li><a href="javascript:;">Events</a></li>
+                    <li><a href="javascript:;">Calendar</a></li>
+                    <li class="end"><a href="javascript:;">Contact Us</a></li>
+                </ul>
+            
+            </nav> <!-- end #nav-main -->
+    
+        </header> <!-- end header -->
+        
+        <div id="middle">
+        
+        	<!-- NAV MOBILE -->
+    
     		<nav id="nav-mobile">
                 <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
                 <ul id="nav-toggle">
@@ -11,80 +69,50 @@
                     <li><a href="javascript:;">Events</a></li>
                     <li><a href="javascript:;">Calendar</a></li>
                     <li><a href="javascript:;">Contact Us</a></li>
-                </ul> <!-- end #nav-toggle -->
+                </ul>
         	</nav>
             
-            <div id="breadcrumbs">
-            	<p>Placeholder for breadcrumbs nav</p>
-            </div> <!-- #breadcrumbs -->
+        	<img src="images/placeholder-spotlight-image.png" alt="image placeholder for spotlight image" class="spotlight"/>
+           	
+                <div class="one-third-left">
+                    <h3><a href="javascript:;">UPCOMING EVENTS</a></h3>
+                    <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+                </div> <!-- end .one-third -->
             
-            <aside id="primary">
-                <h3>HOW TO JOIN</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                </ul>
+            <div id="main-front">
+            
+                    <div class="one-third-middle">
+                        <h3><a href="javascript:;">RECENT NEWS</a></h3>
+                        <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+                    </div> <!-- end .one-third -->
                 
-                <h3>MEETINGS</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                </ul>
+                    <div class="one-third-right last">
+                        <h3><a href="javascript:;">SEO PARAGRAPH</a></h3>
+                        <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+                    </div> <!-- end .one-third -->
                 
-                <h3>DUES</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                </ul>
-			</aside> <!-- end #primary --> 
-                               
-            <div id="content">
-                <h2>MEMBERSHIP</h2>
-                <h3>Subheadline</h3>
-                <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has, te pri sint delenit accusamus. Pri te natum ubique aliquando, ex tempor efficiantur duo.</p>
-
-                <p>Per cu intellegam neglegentur vituperatoribus, solet ignota option ut eos, cum ut cibo ludus aliquip. Nec ei atqui quodsi fuisset, dicit nullam torquatos ad qui. Usu ei wisi timeam civibus, cu vis utroque facilis. Cum ne veritus accumsan voluptatum, ignota euismod torquatos eos ut, at vix putent latine sententiae.</p>
-
-                <p>Quo alia laudem quaestio an, eos modo petentium constituto an, vel delenit insolens forensibus te. Vel quod euripidis appellantur ei, alia detraxit principes cu quo. Eu sit stet deserunt. Sed no malis consul instructior, ne singulis rationibus eam. Duis aperiam accumsan ex eos, cu vel minim iudicabit, eius quodsi temporibus ad nam.</p>
-
-                <p>Ei unum iriure eloquentiam mel, hendrerit instructior in his, ut regione definitiones nec. Ius ut voluptua definitionem, no eam amet lucilius. Te nostrud persecuti eum, te usu ullum deleniti, usu ne dicta hendrerit delicatissimi. Vel movet eleifend ex. Mel quando nonumy accusata ex, alia elaboraret sea ea.</p>                         
-                        
-            </div> <!-- end #content --> 
+           	</div> <!-- end #main-front -->
+            
         </div> <!-- end #middle -->
-=======
-<div id="wrapper">
- 	 	<?php if (have_posts()) : ?>
-		
-        <?php while (have_posts()) : the_post(); ?>
+        
+        <footer>
+            
+            <!-- NAV FOOTER -->
+            <nav id="nav-footer">
+            
+            	<ul>
+                	<li><a href="javascript:;">About SSYC</a></li>
+                    <li><a href="javascript:;">Membership</a></li>
+                    <li><a href="javascript:;">Boating</a></li>
+                    <li><a href="javascript:;">Events</a></li>
+                    <li><a href="javascript:;">Calendar</a></li>
+                    <li><a href="javascript:;">Contact Us</a></li>
+                </ul>
+            
+            </nav> <!-- end #nav-footer -->
+            
+        </footer>
 
-	<article class="post">			
-        <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title();?></a></h2>
-        <h3>Sideshow</h3>
-		<div class="slideshow"><!--Slideshow-->
-			<img src="http://dummyimage.com/600x300" alt=" " />
-		</div>
-	</article>
-
-	<?php endwhile; ?>
-	
-	<?php else : ?>
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-			<?php get_search_form(); ?>	
-	<?php endif; ?>
-</div><!--end wrapper div-->
-
-<aside>
-	<h3>Sidebar</h3>
-	<?php get_sidebar(); ?>
-</aside>
-    
->>>>>>> origin/master
-<?php get_footer(); ?>
+	</div> <!-- end #wrapper -->
+</body>
+</html>

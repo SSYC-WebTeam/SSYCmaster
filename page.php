@@ -1,21 +1,8 @@
-<?php get_header(); ?>
-<div id="middle">
-    <!-- NAV MOBILE -->
-    		<nav id="nav-mobile">
-                <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
-                <ul id="nav-toggle">
-                    <li><a href="javascript:;">About SSYC</a></li>
-                    <li><a href="javascript:;">Membership</a></li>
-                    <li><a href="javascript:;">Boating</a></li>
-                    <li><a href="javascript:;">Events</a></li>
-                    <li><a href="javascript:;">Calendar</a></li>
-                    <li><a href="javascript:;">Contact Us</a></li>
-                </ul> <!-- end #nav-toggle -->
-        	</nav>
-            
-            <div id="breadcrumbs">
-            	<p>Placeholder for breadcrumbs nav</p>
-            </div> <!-- #breadcrumbs -->
+<?php get_header(); ?>   
+<body id="page-template">
+
+	<div id="wrapper">
+        <div id="middle">
             
             <aside id="primary">
                 <h3>HOW TO JOIN</h3>
@@ -55,6 +42,7 @@
 
                 <p>Ei unum iriure eloquentiam mel, hendrerit instructior in his, ut regione definitiones nec. Ius ut voluptua definitionem, no eam amet lucilius. Te nostrud persecuti eum, te usu ullum deleniti, usu ne dicta hendrerit delicatissimi. Vel movet eleifend ex. Mel quando nonumy accusata ex, alia elaboraret sea ea.</p>                         
                         
-            </div> <!-- end #content --> 
+            </div> <!-- end #content -->
+                
         </div> <!-- end #middle -->
 <?php get_footer(); ?>

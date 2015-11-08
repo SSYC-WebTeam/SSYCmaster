@@ -88,7 +88,7 @@ body {
 #content {
 	width: 620px;
 	width: 65.957446808511%; /* 620px target element / 940px parent element = 65.957446808511% */
-	float: left;	
+	float: right;	
 }
 
 footer {

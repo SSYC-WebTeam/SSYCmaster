@@ -38,11 +38,13 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
     <header>
         
         <!-- LOGO -->
+    
         	<h1>
             	<a href="javascript:;">
-                    <span>Seattle Singles</span>
-                	<img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
-                    <span>Yacht Club</span>
+                    
+                    <img src="images/ssyc-logo.png" alt="Seattle Singles Yacht Club Logo" id="logo"/>
+                    
+                    <span>Seattle Singles Yacht Club</span>
             	</a>
             </h1>            
     

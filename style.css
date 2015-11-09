@@ -22,6 +22,7 @@ body, body * {
 
 a img {
 	border: 0;
+    display: block;
 }
 
 /* END RESETS */
@@ -102,7 +103,6 @@ body {
 footer {
 	clear: both;
 	width: 100%;
-    height: auto;
 }
 
 .spotlight {
@@ -294,7 +294,6 @@ iframe,
 
 header {
 	width: 100%;
-    align-content: center;
 	overflow: hidden;
 }
 
@@ -307,7 +306,7 @@ header h1 {
 }	
 
 header h1 span {
-	display: inline-block;
+	display: block;
 }
 
 header h1 a:hover,
@@ -317,8 +316,6 @@ header h1 a:focus {
 
 #logo {
 	margin: 0 auto;
-    height: 100px;<!-- logo will not display. NEEDS FIX!!! --> 
-    width: 150px;<!-- delete H and W after logo works JCB -->
 }
 
 /* RESPONSIVE TOGGLE MAIN MENU */

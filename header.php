@@ -72,6 +72,7 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
 						'theme_location' => 'mobile-menu' ,
 						'menu' => 'Mobile Menu' ,
 						'container' => 'ul'
+						'menu_id' => 'nav-toggle' ,
 					)) ?>
                     
                 </ul> <!-- end #nav-toggle -->

@@ -69,8 +69,8 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
                 <ul id="nav-toggle">
                     
                     <?php wp_nav_menu( array(
-						'theme_location' => 'mobile-menu' ,
-						'menu' => 'Mobile Menu' ,
+						'theme_location' => 'toggle-menu' ,
+						'menu' => 'Mobile Toggle Menu' ,
 						'container' => 'ul'
 						'menu_id' => 'nav-toggle' ,
 					)) ?>

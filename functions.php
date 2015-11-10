@@ -15,7 +15,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
 		  'main-menu' => 'Main Menu',
-		  'mobile-menu' => 'Mobile Menu',
+		  'toggle-menu' => 'Mobile Toggle Menu',
 		  'footer-menu' => 'Footer Menu'
 		)
 	);

@@ -63,7 +63,7 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
                 <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
                 <ul id="nav-toggle">
                     
-                    <?php wp_nav_menu( array('theme_location' => 'main')) ?>
+                    <?php wp_nav_menu( array('theme_location' => 'footer-menu')) ?>
                     
                 </ul> <!-- end #nav-toggle -->
         	</nav>

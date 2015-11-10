@@ -51,7 +51,12 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
          	<!-- NAV MAIN -->
             <nav id="nav-main">
             
-                <?php wp_nav_menu( array('theme_location' => 'main')) ?>
+           		<?php wp_nav_menu( array( 
+					'theme_location' => 'main-menu' ,
+					'menu' => 'Main Menu' ,
+					'container'  => 'ul', 
+
+				) ); ?>
             
             </nav> <!-- end #nav-main -->
     
@@ -63,7 +68,11 @@ $("#nav-toggle").toggle(); // ... open or close the navigation list
                 <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
                 <ul id="nav-toggle">
                     
-                    <?php wp_nav_menu( array('theme_location' => 'footer-menu')) ?>
+                    <?php wp_nav_menu( array(
+						'theme_location' => 'mobile-menu' ,
+						'menu' => 'Mobile Menu' ,
+						'container' => 'ul'
+					)) ?>
                     
                 </ul> <!-- end #nav-toggle -->
         	</nav>

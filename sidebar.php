@@ -1,33 +1,19 @@
-<!-- begin sidebar -->
+<!-- #left sidebar -->
+        <div class="one-third-left">
+             <h3><a href="javascript:;">UPCOMING EVENTS</a></h3>
+             <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+        </div> <!-- end .one-third -->
 
-<!-- #right sidebar -->
-<aside class="sidebar left">
-	<div class="screen-reader-text">
-	<h2 class="event embossed">UPCOMING EVENTS</h2>
-	<ul class="sidebarNav">
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-	</ul>
-	</div>
-
-<!-- #main sidebar -->
-<aside class="sidebar main">
-	<div class="screen-reader-text">
-	<h2 class="news embossed">RECENT NEWS</h2>
-	<ul class="sidebarNav">
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-	</ul>
-	</div>
-
-<!-- #right sidebar -->
-<aside class="sidebar right">
-	<div class="screen-reader-text">
-	<h2 class="seo embossed">SEO PARAGRAPH</h2>
-	<ul class="sidebarNav">
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-		<li><a href="#">Pellentesque habitant morbi</a></li>
-	</ul>
-	</div>	
-</aside>
-<!-- end sidebar -->
+ <!-- #main sidebar -->           
+        <div id="main-front">
+             <div class="one-third-middle">
+                <h3><a href="javascript:;">RECENT NEWS</a></h3>
+                <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+             </div> <!-- end .one-third -->
+                
+             <div class="one-third-right last">
+                <h3><a href="javascript:;">SEO PARAGRAPH</a></h3>
+                <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
+             </div> <!-- end .one-third -->                             
+             </div> <!-- end #main-front -->            
+        </div> <!-- end #middle -->

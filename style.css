@@ -1,15 +1,15 @@
 /*
 Plugins installed:
-*@Contact - Contact Form 7: https://wordpress.org/plugins/contact-form-7/
-*@Event Calendar - The Events Calendar: https://wordpress.org/plugins/the-events-calendar
-*@Updraft plus - UpdraftPlus - Backup/Restore: https://wordpress.org/plugins/updraftplus/
-*@Wealther -  US Weather Widget: https://wordpress.org/plugins/us-weather-widget-willyweather/
-*@Php - code widget: https://wordpress.org/plugins/php-code-widget/
-*@Backup - BackUpWordPress: https://wordpress.org/plugins/backupwordpress/
-*@Anti-spam - Akismet https://wordpress.org/plugins/akismet/
-*@Search tool - Relevanssi https://wordpress.org/plugins/relevanssi/
-*@SEO - Yoast SEO https://wordpress.org/plugins/wordpress-seo/
-*@Flexslider - MetaSlide Responsive: https://wordpress.org/plugins/ml-slider/
+@Contact - Contact Form 7: https://wordpress.org/plugins/contact-form-7/
+@Event Calendar - The Events Calendar: https://wordpress.org/plugins/the-events-calendar
+@Updraft plus - UpdraftPlus - Backup/Restore: https://wordpress.org/plugins/updraftplus/
+@Wealther -  US Weather Widget: https://wordpress.org/plugins/us-weather-widget-willyweather/
+@Php - code widget: https://wordpress.org/plugins/php-code-widget/
+@Backup - BackUpWordPress: https://wordpress.org/plugins/backupwordpress/
+@Anti-spam - Akismet https://wordpress.org/plugins/akismet/
+@Search tool - Relevanssi https://wordpress.org/plugins/relevanssi/
+@SEO - Yoast SEO https://wordpress.org/plugins/wordpress-seo/
+@Flexslider - MetaSlide Responsive: https://wordpress.org/plugins/ml-slider/
 */
 
 @charset "UTF-8";
@@ -19,6 +19,21 @@ Description: Custom theme for Seattle Singles Yacht Club - 2015
 Version: 1.0
 Author: Maureen Crist
 */
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* declared width = rendered width */ 
+}
+
+a img {
+  border: 0;
+  display: block;
+}
+
+/* END RESETS */
+
+/* FOR DEVO ONLY */
 
 body {
   background-image: url(images/bg-940-grid.jpg);
@@ -91,14 +106,15 @@ body {
   float: right; 
 }
 
-footer {
+footer { 
   clear: both;
-  width: 100%;
+  width: 69.3333333333%;
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .spotlight {
-  width: 100%;
-    height: 350px;<!-- change when plugin is installed -->
+  width: 100%;  
 }
 
 #main-front {
@@ -113,6 +129,7 @@ footer {
   float: left;
   padding: 10px;
   padding: 0.625em;
+  border-right: 1px solid #d7d7d7;  /* #d7d7d7 = super light gray */
 }
 
 .one-third-middle {
@@ -121,6 +138,7 @@ footer {
   float: left;
   padding: 10px;
   padding: 0.625em;
+  border-right: 1px solid #d7d7d7;  /* #d7d7d7 = super light gray */
 }
 
 .one-third-right {
@@ -297,7 +315,7 @@ header h1 {
 } 
 
 header h1 span {
-  display: block;
+  display: none;  
 }
 
 header h1 a:hover,
@@ -308,6 +326,7 @@ header h1 a:focus {
 #logo {
   margin: 0 auto;
 }
+
 
 /* RESPONSIVE TOGGLE MAIN MENU */
 
@@ -404,6 +423,7 @@ header h1 a:focus {
   margin-top: 0.9em;  
   margin-bottom: 0.9em;
 }
+
 #nav-social li {
   float: left;
   margin-right: 20px;
@@ -414,13 +434,16 @@ header h1 a:focus {
   text-align: right;
   list-style-type: none;
 }
+
 #nav-social li.last {
   margin-right: 0;  
 }
+
 #nav-social a:link,
 #nav-social a:visited {
   text-decoration: none;  
 }
+
 #nav-social a:hover img,
 #nav-social a:focus img {
   
@@ -429,6 +452,7 @@ header h1 a:focus {
   box-shadow: 0 1px 10px #999;  
   
 }
+
 #nav-social img {
   display: block;   
 }
@@ -437,7 +461,7 @@ header h1 a:focus {
 /* #NAV-FOOTER */
 
 #nav-footer {
-  width: 100%; 
+  width: 100%;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;  
 }
@@ -452,10 +476,12 @@ header h1 a:focus {
   margin: 7px 0 0 0; /* reset margin and padding, just in case */
   margin: 0.4375em 0 0 0;
   float: left;
+  text-align: center;
   width: 16.66666666666667%;
 }
 
 #nav-footer a {
+  display: inline;
   text-transform: uppercase;
 }
 
@@ -580,7 +606,7 @@ header h1 a:focus {
     float: none;
     width: 100%;
     border-right: none;
-    border-bottom: ;  
+    border-bottom: 1px solid #d7d7d7; 
   }
   
   .one-third-middle {
@@ -588,7 +614,7 @@ header h1 a:focus {
     float: none;
     width: 100%;
     border-right: none;
-    border-bottom: ;
+    border-bottom: 1px solid #d7d7d7;
   }
   
   .one-third-right {
@@ -638,4 +664,5 @@ header h1 a:focus {
     margin-top: 2em;  
   }
     
-}
+}  
+    

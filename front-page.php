@@ -1,28 +1,24 @@
 <?php get_header(); ?>
+<div id="wrapper">
+        <?php if (have_posts()) : ?>
         
-        <div id="middle">
-            
-        	<img src="images/placeholder-spotlight-image.png" alt="image placeholder for spotlight image" class="spotlight"/>
-           	
-                <div class="one-third-left">
-                    <h3><a href="javascript:;">UPCOMING EVENTS</a></h3>
-                    <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
-                </div> <!-- end .one-third -->
-            
-            <div id="main-front">
-            
-                    <div class="one-third-middle">
-                        <h3><a href="javascript:;">RECENT NEWS</a></h3>
-                        <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
-                    </div> <!-- end .one-third -->
-                
-                    <div class="one-third-right last">
-                        <h3><a href="javascript:;">SEO PARAGRAPH</a></h3>
-                        <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam. Wisi aperiam ad duo, cu vidit graecis est, nam assum tritani instructior ne. Nulla tritani perfecto vix et, ut nam altera laoreet, posidonium concludaturque est an. Duo harum nominati no, cu dicant nostrum argumentum has</p>
-                    </div> <!-- end .one-third -->
-                
-           	</div> <!-- end #main-front -->
-            
-        </div> <!-- end #middle -->
-        
+        <?php while (have_posts()) : the_post(); ?>
+
+        <div class="slideshow"><!--Slideshow-->
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
+        </div>
+
+    <?php endwhile; ?>
+    
+    <?php else : ?>
+        <h2 class="center">Not Found</h2>
+        <p class="center">Sorry, but you are looking for something that isn't here.</p>
+            <?php get_search_form(); ?> 
+    <?php endif; ?>
+</div><!--end wrapper div-->
+
+<aside> 
+    <?php get_sidebar(); ?>
+</aside>
+    
 <?php get_footer(); ?>

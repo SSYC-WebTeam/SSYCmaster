@@ -100,11 +100,6 @@ body {
 	float: right;	
 }
 
-footer {
-	clear: both;
-	width: 100%;
-}
-
 .spotlight {
 	width: 100%;
     height: 350px;<!-- change when plugin is installed -->
@@ -448,6 +443,14 @@ header h1 a:focus {
 }
 */
 
+
+/* FOOTER */
+
+footer {
+	clear: both;
+	width: 100%;
+}
+
 /* #NAV-FOOTER */
 
 #nav-footer {
@@ -471,6 +474,7 @@ header h1 a:focus {
 
 #nav-footer a {
 	text-transform: uppercase;
+   
 }
 
 /* ASIDE */

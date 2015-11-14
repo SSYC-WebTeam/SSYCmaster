@@ -1,12 +1,11 @@
 <?php get_header(); ?>
-
-<div id="wrapper">
-        <div id="middle">
                     
          <div id="breadcrumbs">
             	<p>Placeholder for breadcrumbs nav</p>
          </div> <!-- #breadcrumbs -->
             
+<div id="middle">
+    
             <aside id="primary">
                 <h3>HOW TO JOIN</h3>
                 <ul>
@@ -58,6 +57,5 @@
 
         </div> <!-- end #content -->                           
     </div> <!-- end #middle -->
-</div><!-- end wrapper div -->
 
 <?php get_footer(); ?>

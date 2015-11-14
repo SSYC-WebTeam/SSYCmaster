@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="wrapper">
+
  	 	<?php if (have_posts()) : ?>
 		
         <?php while (have_posts()) : the_post(); ?>
@@ -18,7 +18,6 @@
 		<p class="center">Sorry, but you are looking for something that isn't here.</p>
 			<?php get_search_form(); ?>	
 	<?php endif; ?>
-</div><!--end wrapper div-->
 
 <aside>	
 	<?php get_sidebar(); ?>

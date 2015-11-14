@@ -453,6 +453,11 @@ header h1 a:focus {
   border-bottom: 1px solid #d7d7d7;  
 }
 
+#nav-footer ul {
+  padding: 0;
+  overflow: hidden; 
+}
+
 #nav-footer li {
   list-style-type: none;
   margin: 7px 0 0 0; /* reset margin and padding, just in case */
@@ -473,8 +478,8 @@ header h1 a:focus {
   flex-wrap: nowrap;
   justify-content: space-between;
   white-space: nowrap;
-  padding: 0 0 0 30px;
-  font-size: 70%;    
+  padding: 0 0 0 20px;
+  font-size: 70%;  
 }
 
 /* ASIDE */

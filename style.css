@@ -199,12 +199,8 @@ h4 {
   margin-top: 0.278em;  
 }
 
-p, ul, ol, dl {
+p, ol, dl {
   margin-bottom: 0.625em;
-}
-
-ul {
-  margin-left: 1.25em;  
 }
 
 ol {
@@ -218,15 +214,6 @@ dt {
 dd {
   margin-bottom: 1.25em;
   margin-left: 1.25em;
-}
-
-li {
-  margin-bottom: 0.417em; 
-}
-
-ul ul, ol ul {
-  margin-left: 1em;
-  margin-bottom: 0;
 }
 
 strong, b {
@@ -477,12 +464,22 @@ header h1 a:focus {
   margin: 0.4375em 0 0 0;
   float: left;
   text-align: center;
-  width: 16.66666666666667%;
+  width: 16.66666666666667%; 
 }
 
 #nav-footer a {
   display: inline;
   text-transform: uppercase;
+}
+
+#nav-footer ul.sub-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 0 0 0 20px;
+  font-size: 70%;  
 }
 
 /* ASIDE */

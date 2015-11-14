@@ -1,7 +1,6 @@
-</div><!-- close wrapper div -->
-
 <!-- footer starts here -->		
 <footer>
+    
 	    <!-- NAV FOOTER -->
     
         <nav id="nav-footer">
@@ -12,8 +11,9 @@
 				'container'  => 'ul', )); ?>
             
         </nav> <!-- end #nav-footer -->
+    
 </footer>
-</div> <!-- end #wrapper -->
+</div><!-- end #wrapper -->
 
 <?php wp_footer(); ?>
 

@@ -12,9 +12,6 @@
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script> 
 <![endif]-->
 
-<!--Style sheets-->
-<link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
-
 <!-- call jquery for the toggle nav -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
@@ -27,12 +24,11 @@
 	});
 </script>
 <!-- End Toggle Menu Script -->
-
-<!-- Remy Sharp Shim --> 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
+   
+    <?php wp_head(); ?>
+    
+<!--Style sheets-->
+<link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 </head>
 
 <body id="front-template">

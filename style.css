@@ -28,7 +28,6 @@ body, body * {
 
 a img {
   border: 0;
-  display: block;
 }
 
 /* END RESETS */
@@ -106,10 +105,9 @@ body {
   float: right; 
 }
 
-footer { 
+footer {
   clear: both;
-  width: 940px;
-  margin: 0 auto 30px;
+  width: 100%;  
 }
 
 .spotlight {
@@ -198,8 +196,12 @@ h4 {
   margin-top: 0.278em;  
 }
 
-p, ol, dl {
+p, ul, ol, dl {
   margin-bottom: 0.625em;
+}
+
+ul {
+  margin-left: 1.25em;  
 }
 
 ol {
@@ -213,6 +215,15 @@ dt {
 dd {
   margin-bottom: 1.25em;
   margin-left: 1.25em;
+}
+
+li {
+  margin-bottom: 0.417em; 
+}
+
+ul ul, ol ul {
+  margin-left: 1em;
+  margin-bottom: 0;
 }
 
 strong, b {
@@ -447,7 +458,7 @@ header h1 a:focus {
 /* #NAV-FOOTER */
 
 #nav-footer {
-  width: 100%;
+  width: 100%; 
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;  
 }
@@ -463,7 +474,7 @@ header h1 a:focus {
   margin: 0.4375em 0 0 0;
   float: left;
   text-align: center;
-  width: 16.66666666666667%; 
+  width: 16.66666666666667%;
 }
 
 #nav-footer a {
@@ -477,8 +488,8 @@ header h1 a:focus {
   flex-wrap: nowrap;
   justify-content: space-between;
   white-space: nowrap;
-  padding: 0 0 0 20px;
-  font-size: 70%;  
+  padding: 0;
+  font-size: 65%;    
 }
 
 /* ASIDE */
@@ -660,5 +671,7 @@ header h1 a:focus {
     margin-top: 2em;  
   }
     
-}  
+}
+
+  
     

@@ -16,15 +16,15 @@
 <link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 
 <!-- call jquery for the toggle nav -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 <!-- Toggle Menu Script -->
 <script type="text/javascript">
-	$(window).load(function() { // enable function upon window load
-	$("#toggle-icon").click(function() { // when link is clicked...
-	$("#nav-toggle").toggle(); // ... open or close the navigation list
-	});
-	});
+    $(window).load(function() { // enable function upon window load
+        $("#toggle-icon").click(function() { // when link is clicked...
+        $("#nav-toggle").toggle(); // ... open or close the navigation list
+        });
+    });
 </script>
 <!-- End Toggle Menu Script -->
 
@@ -36,35 +36,41 @@
 </head>
 
 <body id="front-template">
-	
-	<div id="wrapper">
+    
+    <div id="wrapper">
 
 <!-- HEADER -->
 <header>
 
     <!-- LOGO -->
-	<h1>          		
-    	<img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" />
+    <h1>                
+        <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" />
 
     <!-- TITLE -->
-    	<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>		
-    </h1> 		
+        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>       
+    </h1>       
 
-	<!-- NAV MAIN -->
-	<nav id="nav-main">
-		<?php wp_nav_menu( array('theme_location' => 'main')) ?>
-	</nav> <!-- end #nav-main -->
+    <!-- NAV MAIN -->
+    <nav id="nav-main">
+        <?php wp_nav_menu( array('theme_location' => 'main')) ?>
+    </nav> <!-- end #nav-main -->
     
 </header> <!-- end header -->
 
 <!-- NAV MOBILE -->
     <nav id="nav-mobile">
-        <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
-        <ul id="nav-toggle">            
-            <?php wp_nav_menu( array(
-                'theme_location' => 'toggle-menu' ,
-                'menu' => 'Mobile Toggle Menu' ,
-                'container' => 'ul' ,
-                'menu_id' => 'nav-toggle' , )) ?>            
-        </ul> <!-- end #nav-toggle -->
+        <div class="menu-container">   
+            <div id="toggle-icon">
+                <a class="dropdown-toggle" title="Menu">&#9776;  MENU</a>   
+            </div>           
+                <ul class="nav-toggle" id="toggle-icon-items">
+                    <ul>            
+                        <?php wp_nav_menu( array(
+                            'theme_location' => 'toggle-menu' ,
+                            'menu' => 'Mobile Toggle Menu' ,
+                            'container' => 'ul' ,
+                            'menu_id' => 'nav-toggle')) ?>
+                    </ul>               
+                </ul> <!-- end #nav-toggle -->            
+        </div><!-- .menu-container -->
     </nav>

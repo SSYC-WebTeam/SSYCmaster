@@ -505,9 +505,16 @@ header h1 a:focus {
 }
 
 /* ASIDE */
-aside li{
-  list-style-type: none;  
+#aside-front img { 
+width: 70px;
+height: 70px;
+float: left;
+} 
+
+#aside-front p{
+margin-left: 70px;    
 }
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1000px) {

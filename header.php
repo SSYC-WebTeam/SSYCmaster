@@ -41,21 +41,28 @@
 
 <!-- HEADER -->
 <header>
+    <!-- LOGIN -->
+    <div id="login">
+        <p>LOGIN</p>
+    </div>
 
     <!-- LOGO -->
+    <div id="logo">
     <h1>                
         <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" />
 
     <!-- TITLE -->
         <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>       
     </h1>       
+    </div>
 
+ </header> <!-- end header -->   
     <!-- NAV MAIN -->
     <nav id="nav-main">
         <?php wp_nav_menu( array('theme_location' => 'main')) ?>
     </nav> <!-- end #nav-main -->
     
-</header> <!-- end header -->
+
 
 <!-- NAV MOBILE -->
     <nav id="nav-mobile">

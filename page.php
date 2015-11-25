@@ -1,40 +1,70 @@
 <?php get_header(); ?>
 
-<div id="page-template"><!-- *Changed Body element to a Div because Body opens in header and closes in the footer -->
+<body id="page-template">
 
      <div id="middle">
-                    
-         <div id="breadcrumbs">
-            	<p>Placeholder for breadcrumbs nav</p>
-         </div> <!-- #breadcrumbs -->
+     
+         <div class="wrapper">
+                        
+             <div id="breadcrumbs">
+                    <p>Placeholder for breadcrumbs nav</p>
+             </div> <!-- #breadcrumbs -->
+                
+             <aside id="primary">
+             	<h3>HOW TO JOIN</h3>
+                <ul>
+                    <li><a href="javascript:;">Loret Lipsuc</a></li>
+                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
+                    <li><a href="javascript:;">Etiam tincidun</a></li>
+                    <li><a href="javascript:;">Loret Lipsuc</a></li>
+                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
+                    <li><a href="javascript:;">Etiam tincidun</a></li>
+                    <li><a href="javascript:;">Loret Lipsuc</a></li>
+                </ul>
+                
+                <h3>MEETINGS</h3>
+                <ul>
+                    <li><a href="javascript:;">Loret Lipsuc</a></li>
+                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
+                    <li><a href="javascript:;">Etiam tincidun</a></li>
+                </ul>
+                
+                <h3>DUES</h3>
+                <ul>
+                    <li><a href="javascript:;">Loret Lipsuc</a></li>
+                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
+                    <li><a href="javascript:;">Etiam tincidun</a></li>
+                </ul>
+                
+  
+                   <?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("left-widget-top") || !dynamic_sidebar("left-widget-middle")|| !dynamic_sidebar("left-widget-bottom")) : 
+                    //endif; ?>
+            </aside> <!-- end #primary -->                                
             
-         <aside id="primary">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("left-widget-top") || !dynamic_sidebar("left-widget-middle")|| !dynamic_sidebar("left-widget-bottom")) : 
-                endif; ?>
-		</aside> <!-- end #primary -->                                
+            <div id="content">    
+               	<?php if (have_posts()) : ?>
+                
+                <?php while (have_posts()) : the_post(); ?>
+            
+            
+                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">		<?php the_title();?></a></h2>
         
-    <div id="content">    
-		<?php if (have_posts()) : ?>
-		
-        <?php while (have_posts()) : the_post(); ?>
-
-	
-                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title();?></a></h2>
-
-        		<!--post-->
-        		<?php the_content();?>
-        		
-    	<?php endwhile; ?>
-    	
-    	<?php else : ?>
-        		<h2 class="center">Not Found</h2>
-        		<p class="center">Sorry, but you are looking for something that isn't here.</p>
-        			<?php get_search_form(); ?>	
-    	
-        <?php endif; ?>
-
-        </div> <!-- end #content -->                           
+                <!--post-->
+                <?php the_content();?>
+                
+                <?php endwhile; ?>
+                
+                <?php else : ?>
+                        <h2 class="center">Not Found</h2>
+                        <p class="center">Sorry, but you are looking for something that isn't here.</p>
+                            <?php get_search_form(); ?>	
+                
+                <?php endif; ?>
+        
+                </div> <!-- end #content -->  
+     	
+        </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->
-</div><!--end page-template-->
+</body><!--end page-template-->
 
 <?php get_footer(); ?>

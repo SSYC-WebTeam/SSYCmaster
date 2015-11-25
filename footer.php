@@ -1,17 +1,30 @@
 <!-- footer starts here -->		
-<footer>
+<footer>	
 
-     <!-- NAV FOOTER -->    
+	
+
+     	<!-- NAV FOOTER -->    
         <nav id="nav-footer">
-            <?php wp_nav_menu( array( 
-				'theme_location' => 'footer-menu' ,
-				'menu' => 'Footer Menu' ,
-				'container'  => 'ul' )); ?>      
-        </nav> <!-- end #nav-footer -->
-</footer>
-</div><!-- close wrapper div -->
+        
+        	<div class="wrapper">
+				<?php wp_nav_menu( array( 
+                    'theme_location' => 'footer-menu' ,
+                    'menu' => 'Footer Menu' ,
+                    'container'  => 'ul' )); ?>      
 
-<?php wp_footer(); ?>
+			</div> <!-- end .wrapper -->
+
+        </nav> <!-- end #nav-footer -->
+        
+        <div id="copyright">
+        	<p><span class="small">&copy;2015 All rights reserved.</span></p>
+        </div> <!-- end #copyright -->
+
+                
+</footer>
+<!--</div>--><!-- close #wrapper -->
+
+<?php //wp_footer(); ?>
 	
 </body>
 </html>

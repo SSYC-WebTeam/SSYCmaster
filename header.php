@@ -27,37 +27,46 @@
     });
 </script>
 <!-- End Toggle Menu Script -->
-    
-<?php wp_head(); ?>
-    
+
+<!-- Remy Sharp Shim --> 
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 </head>
 
 <body id="front-template">
     
-    <div id="wrapper">
+    <!--<div id="wrapper">-->
 
 <!-- HEADER -->
 <header>
-    <!-- LOGIN -->
-    <div id="login">
-        <p>LOGIN</p>
-    </div>
-
-    <!-- LOGO -->
-    <div id="logo">
-    <h1>                
-        <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" />
-
-    <!-- TITLE -->
-        <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>       
-    </h1>       
-    </div>
-
- </header> <!-- end header -->   
-    <!-- NAV MAIN -->
-    <nav id="nav-main">
-        <?php wp_nav_menu( array('theme_location' => 'main-menu')) ?>
-    </nav> <!-- end #nav-main -->
+	<div class="wrapper">
+    
+    	<!-- LOGIN -->
+    	<div class="login">
+    		<p>LOGIN  <img class="arrow "src="http://localhost:8080/wp-content/uploads/2015/11/arrow-login-down.png" alt="down arrow" /></p>
+    	</div> <!-- end .login -->
+    
+        <!-- LOGO -->
+      	<a href="<?php bloginfo('url'); ?>"><img id="logo" src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" /></a>
+    
+        <!-- TITLE -->
+        <h1> 
+        <span>
+            <a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a> 
+       	</span>      
+        </h1>       
+    
+    </div> <!-- end .wrapper -->
+    
+        <!-- NAV MAIN -->
+        <nav id="nav-main">
+            <div class="wrapper">
+                <?php wp_nav_menu( array(
+				'theme_location' => 'main-menu')) ?>
+            <div class="wrapper">
+        </nav> <!-- end #nav-main -->
     
 
 
@@ -78,3 +87,5 @@
                 </ul> <!-- end #nav-toggle -->            
         </div><!-- .menu-container -->
     </nav>
+    
+</header> <!-- end header -->

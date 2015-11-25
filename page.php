@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body id="page-template">
+<div id="page-template"><!-- *Changed Body element to a Div because Body opens in header and closes in the footer -->
 
      <div id="middle">
                     
@@ -35,6 +35,6 @@
 
         </div> <!-- end #content -->                           
     </div> <!-- end #middle -->
-</body><!--end page-template-->
+</div><!--end page-template-->
 
 <?php get_footer(); ?>

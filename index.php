@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 
+     <div class="slideshow"><!--Slideshow-->
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
+    </div>
+
 <div id="middle">
 
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
 
-        <div class="slideshow"><!--Slideshow-->
-            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
-        </div>
 
     <?php endwhile; ?>
     

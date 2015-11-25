@@ -27,12 +27,9 @@
     });
 </script>
 <!-- End Toggle Menu Script -->
-
-<!-- Remy Sharp Shim --> 
-<!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
+    
+<?php wp_head(); ?>
+    
 </head>
 
 <body id="front-template">
@@ -59,7 +56,7 @@
  </header> <!-- end header -->   
     <!-- NAV MAIN -->
     <nav id="nav-main">
-        <?php wp_nav_menu( array('theme_location' => 'main')) ?>
+        <?php wp_nav_menu( array('theme_location' => 'main-menu')) ?>
     </nav> <!-- end #nav-main -->
     
 

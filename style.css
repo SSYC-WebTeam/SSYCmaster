@@ -3,7 +3,7 @@ Plugins installed:
 @Contact - Contact Form 7: https://wordpress.org/plugins/contact-form-7/
 @Event Calendar - The Events Calendar: https://wordpress.org/plugins/the-events-calendar
 @Updraft plus - UpdraftPlus - Backup/Restore: https://wordpress.org/plugins/updraftplus/
-@Wealther -  US Weather Widget: https://wordpress.org/plugins/us-weather-widget-willyweather/
+@Weather -  US Weather Widget: https://wordpress.org/plugins/us-weather-widget-willyweather/
 @Php - code widget: https://wordpress.org/plugins/php-code-widget/
 @Backup - BackUpWordPress: https://wordpress.org/plugins/backupwordpress/
 @Anti-spam - Akismet https://wordpress.org/plugins/akismet/
@@ -16,8 +16,8 @@ Plugins installed:
 /*  
 Theme Name: SSYC
 Description: Custom theme for Seattle Singles Yacht Club - 2015
-Version: 1.0
-Author: Maureen Crist
+Version: 2.0
+Author: SSYC Web Team
 */
 
 body, body * {
@@ -41,7 +41,7 @@ body {
 }
 
 div, header, aside, footer, nav {
-  border: 1px solid red;  
+  outline: 1px solid red;  
 }
 
 /* END DEVO ONLY */
@@ -75,7 +75,6 @@ body {
 /* LAYOUT */
 
 #wrapper {
-  width: 940px;
   width: 96%;
   max-width: 940px;  /* fixed pixel fallback for older browsers - IE8 and below */
   max-width: 58.75rem; /* 1rem = 16px, 940px/16px = 58.75rem */
@@ -345,7 +344,6 @@ header h1 a:focus {
   width: 940px;
   width: 100%;
   float: right;
-  display: none;
 }
 
 #nav-mobile a:link,
@@ -533,7 +531,6 @@ margin-left: 70px;
 @media screen and (max-width: 1000px) {
 
   #wrapper {
-    width: 900px;
     width: 90%;
     max-width: 900px;  /* fixed pixel fallback for older browsers - IE8 and below */
     max-width: 56.25rem; /* 1rem = 16px, 900px/16px = 56.25rem */

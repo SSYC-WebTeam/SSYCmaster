@@ -7,7 +7,7 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		  'toggle-menu' => 'Mobile Toggle Menu',
 		  'footer-menu' => 'Footer Menu' ));
 }
-add_action( 'init', 'register_my_menu' );
+add_action( 'init', 'register_my_menus' );
 
 function widgets_init() {	
 	register_sidebar (array(

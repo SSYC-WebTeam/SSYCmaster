@@ -127,14 +127,12 @@ footer {
 	width: 65.95744%; /* 620px target element / 940px parent element */	
 }
 
-/*<<<<<<< Updated upstream*/
+
 #aside-front img { 
 width: 60px;
 height: 60px;
 float: left;
 } 
-/*=======
->>>>>>> Stashed changes*/
 
 .one-third-left {
 	width: 300px;

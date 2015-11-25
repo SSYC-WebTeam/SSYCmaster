@@ -71,20 +71,37 @@
 
 
 <!-- NAV MOBILE -->
-    <nav id="nav-mobile">
+    <!--<nav id="nav-mobile">
         <div class="menu-container">   
             <div id="toggle-icon">
                 <a class="dropdown-toggle" title="Menu">&#9776;  MENU</a>   
             </div>           
                 <ul class="nav-toggle" id="toggle-icon-items">
-                    <ul>            
-                        <?php wp_nav_menu( array(
-                            'theme_location' => 'toggle-menu' ,
-                            'menu' => 'Mobile Toggle Menu' ,
-                            'container' => 'ul' ,
-                            'menu_id' => 'nav-toggle')) ?>
-                    </ul>               
-                </ul> <!-- end #nav-toggle -->            
+                    <ul> -->           
+                        <?php //wp_nav_menu( array(
+                            //'theme_location' => 'toggle-menu' ,
+                            //'menu' => 'Mobile Toggle Menu' ,
+                            //'container' => 'ul' ,
+                            //'menu_id' => 'nav-toggle')) ?>
+                    <!--</ul>               
+                </ul>--> <!-- end #nav-toggle -->
+                
+                <!-- START MOBILE NAVIGATION -->
+            <nav id="nav-mobile">
+            <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
+            <?php wp_nav_menu( array( 
+                        'theme_location' => 'toggle-menu' ,
+                        'menu' => 'Mobile Toggle Menu' ,
+                        'container'  => 'ul',
+						'menu_id' => 'nav-toggle' 
+            
+                    ) ); ?>
+            
+            </nav>
+            
+			<!-- END MOGILE NAVIGATION -->
+                
+                            
         </div><!-- .menu-container -->
     </nav>
     

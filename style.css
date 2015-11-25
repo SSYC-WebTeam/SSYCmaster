@@ -371,6 +371,7 @@ header h1 span {
 
 #logo {
 	margin: 0 auto;	/* center wrapper on the page */
+	display: block;
 	width: 620px;
 	width: 38.75em;
 	padding: 40px 20px 20px 20px;

@@ -2,14 +2,15 @@
 
 <div id="middle">
 	<div class="wrapper">
+        
+         <div class="slideshow"><!--Slideshow-->
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
+        
 
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
 
-        <div class="slideshow"><!--Slideshow-->
-            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
-        </div>
 
 		<?php endwhile; ?>
         
@@ -18,6 +19,8 @@
             <p class="center">Sorry, but you are looking for something that isn't here.</p>
                 <?php get_search_form(); ?> 
         <?php endif; ?>
+             
+        
     
         <aside> 
             <?php get_sidebar(); ?>

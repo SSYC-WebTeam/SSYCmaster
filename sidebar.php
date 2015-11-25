@@ -1,7 +1,7 @@
 <aside id="aside-front"> 
 <!-- #left sidebar -->
         <div class="one-third-left">
-            <img src="http://localhost:8080/wp-content/uploads/2015/11/calendar-icon.png" alt="calendar icon"/>
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/calendar-icon.png" alt="calendar icon"/>
             <div class="textbox">
                 <h3>UPCOMING EVENTS</h3>
                 <h4>Loret Lipsum</h4>
@@ -14,7 +14,7 @@
 <!-- #main sidebar -->           
         <div id="main-front">
             <div class="one-third-middle">
-            <img src="http://localhost:8080/wp-content/uploads/2015/11/news-icon.png" alt="news-icon" />
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/news-icon.png" alt="news-icon" />
             <div class="textbox">
                 <h3>RECENT NEWS</h3>
                 <h4>Loret Lipsum</h4>
@@ -26,7 +26,7 @@
  
 <!-- #right sidebar -->                  
         <div class="one-third-right last">
-            <img src="http://localhost:8080/wp-content/uploads/2015/11/anchor-icon.png" alt="anchor-icon"/>
+            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/anchor-icon.png" alt="anchor-icon"/>
             <div class="textbox">
                 <h3>SEO PARAGRAPH</h3>
                 <h4>Loret Lipsum</h4>

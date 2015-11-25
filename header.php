@@ -45,7 +45,7 @@
     
     	<!-- LOGIN -->
     	<div class="login">
-    		<p>LOGIN  <img class="arrow "src="http://localhost:8080/wp-content/uploads/2015/11/arrow-login-down.png" alt="down arrow" /></p>
+    		<p>LOGIN  <img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>
     	</div> <!-- end .login -->
     
         <!-- LOGO -->

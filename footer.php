@@ -17,7 +17,7 @@
         </nav> <!-- end #nav-footer -->
         
         <div id="copyright">
-        	<p><span class="small">&copy;2015 All rights reserved.</span></p>
+        	<p><span class="small">&copy;<?=date('Y')?> All rights reserved.</span></p>
         </div> <!-- end #copyright -->
 
                 

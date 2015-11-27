@@ -7,7 +7,7 @@
          <div class="wrapper">
                         
              <div id="breadcrumbs">
-                    <p>Placeholder for breadcrumbs nav</p>
+                 <?php the_breadcrumb(); ?>
              </div> <!-- #breadcrumbs -->
                 
              <aside id="primary">

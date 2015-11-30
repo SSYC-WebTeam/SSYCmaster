@@ -10,14 +10,6 @@
         
         <?php while (have_posts()) : the_post(); ?>
 
-<<<<<<< HEAD
-=======
-        <div class="slideshow"><!--Slideshow-->
-            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/severance8-web.jpg" alt="slides" />
-  
-        </div>
-
->>>>>>> origin/master
 		<?php endwhile; ?>
         
         <?php else : ?>

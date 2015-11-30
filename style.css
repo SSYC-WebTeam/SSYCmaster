@@ -133,6 +133,16 @@ footer {
 	width: 65.95744%; /* 620px target element / 940px parent element */	
 }
 
+<<<<<<< HEAD
+=======
+
+#aside-front img { 
+width: 60px;
+height: 60px;
+float: left;
+} 
+
+>>>>>>> origin/master
 .one-third-left {
 	width: 300px;
 	width: 31.91489%; /* 300px target element / 940px parent element */	
@@ -368,6 +378,7 @@ header h1 span {
 
 #logo {
 	margin: 0 auto;	/* center wrapper on the page */
+	display: block;
 	width: 620px;
 	width: 38.75em;
 	padding: 40px 20px 20px 20px;

@@ -87,6 +87,16 @@ body {
 	font-size: 90%;	
 }
 
+#primary a:link,
+#primary a:visited {
+	color: #383838;	
+}
+
+#primary a:hover,
+#primary a:focus {
+	color: #888;	
+}
+
 #content {
 	width: 620px;
 	width: 65.957446808511%; /* 620px target element / 940px parent element = 65.957446808511% */
@@ -126,7 +136,6 @@ footer {
 	width: 620px;
 	width: 65.95744%; /* 620px target element / 940px parent element */	
 }
-
 
 #aside-front img { 
 width: 60px;
@@ -282,7 +291,7 @@ a:link,
 a:visited {
 	text-decoration: none;
 	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-	color: #ffffff;
+	color: #383838;
 }
 
 a:hover,

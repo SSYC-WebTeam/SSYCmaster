@@ -11,43 +11,16 @@
              </div> <!-- #breadcrumbs -->
                 
              <aside id="primary">
-             	<h3>HOW TO JOIN</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                </ul>
-                
-                <h3>MEETINGS</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                </ul>
-                
-                <h3>DUES</h3>
-                <ul>
-                    <li><a href="javascript:;">Loret Lipsuc</a></li>
-                    <li><a href="javascript:;">Ut rhoncus tincidunt</a></li>
-                    <li><a href="javascript:;">Etiam tincidun</a></li>
-                </ul>
-                
-  
-                   <?php //if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("left-widget-top") || !dynamic_sidebar("left-widget-middle")|| !dynamic_sidebar("left-widget-bottom")) : 
-                    //endif; ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widget-top") || !dynamic_sidebar("widget-middle")|| !dynamic_sidebar("widget-bottom")) : 
+                    endif; ?>
             </aside> <!-- end #primary -->                                
             
             <div id="content">    
                	<?php if (have_posts()) : ?>
                 
                 <?php while (have_posts()) : the_post(); ?>
-            
-            
-                <h2>	<?php the_title();?></h2>
+                        
+                <h2><?php the_title();?></h2>
         
                 <!--post-->
                 <?php the_content();?>

@@ -43,7 +43,7 @@ function the_breadcrumb() {
         echo get_option('home');
         echo '">';
         bloginfo('name');
-        echo "</a> » ";
+        echo "</a> / ";
         
 	if (is_category() || is_single()) {
 			the_category('title_li=');
@@ -58,7 +58,7 @@ function the_breadcrumb() {
                 $title = get_the_title();
                 foreach ( $anc as $ancestor ) {
                     $output = '<a href="'. get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">
-                    ' . get_the_title($ancestor) . '</a> » ';
+                    ' . get_the_title($ancestor) . '</a> / ';
                 }
                 echo $output;
                 echo '<strong title="' . $title . '"> ' . $title . '</strong>';

@@ -2,11 +2,11 @@
 
 <div id="middle">
     
-    <div class="wrapper">
+
        <div class="slideshow"><!--Slideshow-->
-            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/severance8-web.jpg" alt="slides" />
+       		<img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/front-1900x510-1.jpg" alt="slides" />
         </div>
-    </div>
+
     
         <?php if (have_posts()) : ?>
         

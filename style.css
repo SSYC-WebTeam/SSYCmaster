@@ -495,7 +495,7 @@ header h1 span {
 	margin: 7px 0 0 0; /* reset margin and padding, just in case */
 	margin: 0.4375em 0 0 0;
 	float: left;
-	text-align: center;
+	/*text-align: center;*/
 	width: 16.66666666666667%;
 }
 
@@ -516,8 +516,26 @@ header h1 span {
   flex-wrap: nowrap;
   justify-content: space-between;
   white-space: nowrap;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 0px;
   font-size: 70%;  
+}
+
+#nav-footer ul.sub-menu a:link,
+#nav-footer ul.sub-menu a:visited {
+	color: #888;	
+}
+
+#nav-footer ul.sub-menu a:hover,
+#nav-footer ul.sub-menu a:focus {
+	color: #CBC8C8;	
+}
+
+.contact {
+	width: 16.66666666666667%;
+	float: right;
+	color: #888;
+	font-size: 70%;
+		
 }
 
 /* MEDIA QUERIES */

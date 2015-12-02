@@ -37,21 +37,34 @@ function widgets_init() {
 add_action( 'init', 'widgets_init' );
 
 function the_breadcrumb() {
-	if (!is_home()) {
-		echo '<a href="';
-		echo get_option('home');
-		echo '">';
-		bloginfo('name');
-		echo "</a> » ";
-	
+    global $post;   
+    if (!is_home()) {
+        echo '<a href="';
+        echo get_option('home');
+        echo '">';
+        bloginfo('name');
+        echo "</a> » ";
+        
 	if (is_category() || is_single()) {
 			the_category('title_li=');
 			if (is_single()) {
 				echo " » ";
 				the_title();
 			}
-		} elseif (is_page()) {
-			echo the_title();
-		}
-	}
+
+        } elseif (is_page()) {
+            if ($post->post_parent){
+                $anc = get_post_ancestors( $post->ID );
+                $title = get_the_title();
+                foreach ( $anc as $ancestor ) {
+                    $output = '<a href="'. get_permalink($ancestor) . '" title="' . get_the_title($ancestor) . '">
+                    ' . get_the_title($ancestor) . '</a> » ';
+                }
+                echo $output;
+                echo '<strong title="' . $title . '"> ' . $title . '</strong>';
+            } else {
+                echo '<strong> ' . get_the_title() . '</strong>';
+            }
+        }
+    }
 }

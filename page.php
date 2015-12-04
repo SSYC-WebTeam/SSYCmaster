@@ -11,8 +11,16 @@
              </div> <!-- #breadcrumbs -->
                 
              <aside id="primary">
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("widget-top") || !dynamic_sidebar("widget-middle")|| !dynamic_sidebar("widget-bottom")) : 
-                    endif; ?>
+              <?php
+                if($post->post_parent)
+                $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+                else
+                $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+                if ($children) {?>  
+                <ul>
+                    <?php echo $children; ?>
+                </ul>              
+              <?php } ?>
             </aside> <!-- end #primary -->                                
             
             <div id="content">    
@@ -30,7 +38,6 @@
                 <?php else : ?>
                         <h2 class="center">Not Found</h2>
                         <p class="center">Sorry, but you are looking for something that isn't here.</p>
-                            <?php get_search_form(); ?>	
                 
                 <?php endif; ?>
         

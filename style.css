@@ -24,8 +24,8 @@ a img {
 	background-image: url(images/bg-940-grid.jpg);
 	background-position: 50%;
 	background-repeat: repeat-y;	
-}*/
-
+}
+*/
 /*div, header, aside, footer, nav {
 	border: 1px solid red;	
 }*/
@@ -116,8 +116,9 @@ footer {
 	font-size: 85%;
 	border-top: 1px solid #d1d1d1;
 	border-bottom: 1px solid #d1d1d1;
-	padding-left: 20px;
-	padding-left: 1.25em;	
+	/*padding-left: 20px;
+	padding-left: 1.25em;*/
+	margin-left: 1.25em;	
 }
 
 #breadcrumbs a,
@@ -364,6 +365,7 @@ header {
 	font-size: .9em;
 	padding: 8px 0;
 	padding: .5em 0;
+	margin-left: 1.25em;
 		
 }
 
@@ -487,7 +489,9 @@ header h1 span {
 
 #nav-footer ul {
 	padding: 0;
-	overflow: hidden;	
+	margin-left: 1.25em;
+	overflow: hidden;
+	/*width: 74.468085106383%;*/ 	
 }
 
 #nav-footer li {
@@ -496,12 +500,13 @@ header h1 span {
 	margin: 0.4375em 0 0 0;
 	float: left;
 	/*text-align: center;*/
-	width: 16.66666666666667%;
+	/*width: 16.66666666666667%;*/
+	width: 20%;
 }
 
 #nav-footer a {
 	display: inline;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #ffffff;
 }
 
@@ -517,7 +522,7 @@ header h1 span {
   justify-content: space-between;
   white-space: nowrap;
   padding: 0 0 0 0px;
-  font-size: 70%;  
+  font-size: 90%;  
 }
 
 #nav-footer ul.sub-menu a:link,
@@ -532,10 +537,37 @@ header h1 span {
 
 .contact {
 	width: 16.66666666666667%;
+	clear: both;
 	float: right;
+	/*color: #888;*/
+    /*text-transform: uppercase;*/
+    color: #fff;
+}
+
+.sub-contact {
 	color: #888;
-	font-size: 70%;
-		
+	width: 16.66666666666667%;
+	clear: both;
+	float: right;
+	/*text-transform: uppercase;*/	
+}
+
+#nav-footer ul.sub-contact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    white-space: nowrap;
+    padding: 0px;
+    font-size: 90%;
+}
+
+#nav-footer ul.sub-contact li {
+	margin: 0;	
+}
+
+.img-contact {
+	width: 16px;
+	width: 1em;	
 }
 
 /* MEDIA QUERIES */

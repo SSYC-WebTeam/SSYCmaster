@@ -20,12 +20,12 @@ a img {
 
 /* FOR DEVO ONLY */
 
-/*body {
+body {
 	background-image: url(images/bg-940-grid.jpg);
 	background-position: 50%;
 	background-repeat: repeat-y;	
 }
-*/
+
 /*div, header, aside, footer, nav {
 	border: 1px solid red;	
 }*/
@@ -118,7 +118,7 @@ footer {
 	border-bottom: 1px solid #d1d1d1;
 	/*padding-left: 20px;
 	padding-left: 1.25em;*/
-	margin-left: 1.25em;	
+	/*margin-left: 1.25em;	*/
 }
 
 #breadcrumbs a,
@@ -365,7 +365,6 @@ header {
 	font-size: .9em;
 	padding: 8px 0;
 	padding: .5em 0;
-	margin-left: 1.25em;
 		
 }
 
@@ -444,6 +443,7 @@ header h1 span {
 	padding: 8px 0;
 	padding: 0.5em 0;
 	margin-bottom: 0;
+	margin-left: 0;
 	overflow: hidden;
 	display: block;	
 }
@@ -489,7 +489,7 @@ header h1 span {
 
 #nav-footer ul {
 	padding: 0;
-	margin-left: 1.25em;
+	margin-left: 0;
 	overflow: hidden;
 	/*width: 74.468085106383%;*/ 	
 }
@@ -632,25 +632,38 @@ header h1 span {
 		float: none;
 		width: 100%;		
 	}
+
+	#menu-footer-menu {
+		display: none;	
+	}
 	
 	#nav-footer {
-		border-top: none;
-		border-bottom: none;	
+		overflow: hidden;	
 	}
 	
 	#nav-footer li {
 		clear: left;
 		float: none;	
 		display: block;
-		border-bottom: 1px solid #d7d7d7;
+		/*border-bottom: 1px solid #d7d7d7;*/
 		width: 100%;
-		text-align: right;
+		text-align: left;
 	}
 	
 	#nav-footer a {
 		display: block;	
 		font-size: 130%;
 		padding-right: .625em;
+	}
+	
+	.contact {
+		float: none;
+		width: 100%;	
+	}
+	
+	.sub-contact {
+		float: none;	
+		width: 100%;
 	}
 	
 }
@@ -705,10 +718,6 @@ header h1 span {
 	
 	#secondary h3 {
 		margin-bottom: 0;	
-	}
-	
-	#front-template #nav-footer {
-		display: none;	
 	}
 	
 	#content p,

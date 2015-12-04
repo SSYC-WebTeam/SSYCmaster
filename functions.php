@@ -48,7 +48,7 @@ function the_breadcrumb() {
 	if (is_category() || is_single()) {
 			the_category('title_li=');
 			if (is_single()) {
-				echo " » ";
+				echo " / ";
 				the_title();
 			}
 

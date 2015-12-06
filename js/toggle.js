@@ -1,7 +1,7 @@
 /**
   * Toggle.js
   *
-  * Contains handler.php for navigation 
+  * Contains header.php for toggle navigation 
   *
 */
 $(window).load(function() { // enable function upon window load

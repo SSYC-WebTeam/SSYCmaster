@@ -16,21 +16,16 @@
 <link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 
 <!-- call jquery for the toggle nav -->
- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
 
-<!-- Toggle Menu Script -->
-<script type="text/javascript">
-    $(window).load(function() { // enable function upon window load
-        $("#toggle-icon").click(function() { // when link is clicked...
-        $("#nav-toggle").toggle(); // ... open or close the navigation list
-        });
-    });
-</script>
+<script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
 <!-- End Toggle Menu Script -->
 
 <!-- Remy Sharp Shim --> 
 <!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js">
+<link rel="stylesheet" type="text/css"
+href="css/stylesheet.css" />
 <![endif]-->
 
 </head>
@@ -88,7 +83,7 @@
                 
                 <!-- START MOBILE NAVIGATION -->
             <nav id="nav-mobile">
-            <a id="toggle-icon" href="javascript:;">&#9776;  MENU</a>
+            <a id="toggle-icon">&#9776;  MENU</a>
             <?php wp_nav_menu( array( 
                         'theme_location' => 'toggle-menu' ,
                         'menu' => 'Mobile Toggle Menu' ,

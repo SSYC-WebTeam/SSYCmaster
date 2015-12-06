@@ -15,8 +15,8 @@
                	</div> 
                 
                 <ul class="sub-contact">
-                    <li><img class="img-contact" src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/phone-icon.png" alt="phone"/>  (206)555-1234</li>
-                    <li><img class="img-contact" src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/mail-icon.png" alt="email"/>   contact@ssyc.org</li>
+                    <li><img class="img-contact" src="<?php get_stylesheet_directory_uri(); ?>/wp-content/themes/SSYCmaster/images/phone-icon.png" alt="phone"/>  (206)555-1234</li>
+                    <li><img class="img-contact" src="<?php get_stylesheet_directory_uri(); ?>/wp-content/themes/SSYCmaster/images/mail-icon.png" alt="email"/>   contact@ssyc.org</li>
                 </ul>
         
 				<?php wp_nav_menu( array( 

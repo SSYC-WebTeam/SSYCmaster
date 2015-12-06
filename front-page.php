@@ -3,7 +3,11 @@
 <div id="middle">    
 
        <div class="slideshow"><!--Slideshow-->
-       		<img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/front-1900x510-1.jpg" alt="slides" />
+           
+       		<?php 
+            echo do_shortcode("[metaslider id=146]"); 
+            ?>
+           
         </div>
     
         <?php if (have_posts()) : ?>

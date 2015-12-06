@@ -18,6 +18,9 @@
 <!-- call jquery for the toggle nav -->
 <script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
 
+<!-- THIS FUNCTION WILL GET THE URL ADDRESS TO FIN IT-->
+<link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon-ssyc.ico" />
+
 <script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
 <!-- End Toggle Menu Script -->
 

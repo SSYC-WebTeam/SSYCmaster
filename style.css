@@ -448,6 +448,13 @@ header h1 span {
 	display: block;	
 }
 
+#nav-main li.current_page_item a {
+    color: #D40222;
+}
+
+#nav-mobile li.current_page_item a {
+    color: #D40222;
+}
 #nav-main li {
 	list-style-type: none;
 	margin: 7px 0 0 0; /* reset margin and padding, just in case */
@@ -814,5 +821,100 @@ header h1 span {
 		
 }
 
+/*BEGINS CONTACT FORM STYLE*/
+
+/* -------------------------------- 
+
+
+
+/* -------------------------------- 
+
+Form
+
+-------------------------------- */
+
+	/*.wpcf7
+{
+    background-color: #f7f7f7;
+    border: 2px solid #0f0;
+}*/
+.wpcf7-form.cf7-style.\38 3-autosave-v1 {
+    margin-top: 5%;
+}
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .wpcf7-form-control.wpcf7-text {
+    background-color: antiquewhite;
+    background-color: #FFF;
+    border-radius: 0.25em;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08) inset;
+    border: 1px solid #CFD9DB;
+    height: 55px;
+    width: 61%;
+	font-size: 1rem;
+	padding-left: 9px;
+}
+
+.wpcf7-form-control.wpcf7-textarea{
+	background-color: antiquewhite;
+    background-color: #FFF;
+    border-radius: 0.25em;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08) inset;
+    border: 1px solid #CFD9DB;
+    height: 155px;
+    width: 61%;
+	font-size: 1rem;
+	padding-left: 9px;
+	padding-top: 10px;
+	font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+	}
+
+
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required:focus, .wpcf7-form-control.wpcf7-text:focus, .wpcf7-form-control.wpcf7-textarea:focus {
+    outline: medium none;
+    border-color: #280E5B;
+    box-shadow: 0px 0px 5px rgba(44, 151, 222, 0.2);
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    border: medium none;
+    background: #D40222 none repeat scroll 0% 0%;
+    border-radius: 0.25em;
+    padding: 16px 20px;
+    color: #FFF;
+    font-weight: bold;
+    float: left;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-appearance: none;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+	width: 61%;
+}
+
+.text-inside{
+    top: 16px;
+    left: 16px;
+    font-size: 1rem;
+	text-transform: uppercase;
+    cursor: text;
+    transition: top 0.2s ease 0s, left 0.2s ease 0s, font-size 0.2s ease 0s;
+	clear: both;
+}
+
+/*error message*/
+.wpcf7-not-valid-tip {
+    float: left;
+    color: rgb(212, 2, 34);
+    clear: both;
+    text-align: right;
+    margin-bottom: 2%;
+    overflow: hidden;
+    font-size: 1rem;
+	
+}
+
+
+
+/*ENDS CONTACT FORM STYLE*/
 	
 		

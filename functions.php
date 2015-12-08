@@ -9,30 +9,36 @@ if ( function_exists( 'register_nav_menus' ) ) {
 }
 add_action( 'init', 'register_my_menu' );
 
-function widgets_init() {	
-	register_sidebar (array(
-		'name' => __( 'Top Sidebar', 'widgets_init' ),
-		'id' => 'widget-top',
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>' ));
+if ( function_exists( 'register_sidebar') ) {
+    register_sidebar(array(       
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>' ));
 
-	register_sidebar (array(
-		'name' => __( 'Middle Sidebar', 'widgets_init' ),
-		'id' => 'widget-middle',
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>' ));
+    register_sidebar (array(
+        'name' => __( 'Login Widget', 'widgets_init' ),
+        'id' => 'login-widgets',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>' ));
 
-	register_sidebar (array(
-		'name' => __( 'Bottom Sidebar', 'widgets_init' ),
-		'id' => 'widget-bottom',	
-		'before_widget' => '<li id="%1$s" class="widget %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>' ));
+    register_sidebar (array(
+        'name' => __( 'Event Widget', 'widgets_init' ),
+        'id' => 'event-widgets',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>' ));
+
+    register_sidebar (array(
+        'name' => __( 'Calendar Widget', 'widgets_init' ),
+        'id' => 'calendar-widgets',    
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>' ));
 }
 add_action( 'init', 'widgets_init' );
 

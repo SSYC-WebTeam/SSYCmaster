@@ -42,7 +42,8 @@ href="css/style.css" />
     
     	<!-- LOGIN -->
     	<div class="login">
-    		<p>LOGIN  <img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>
+            <?php include_once("login_widgets.php"); ?>
+    		<p>LOGIN<img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>            
     	</div> <!-- end .login -->
     
         <!-- LOGO -->

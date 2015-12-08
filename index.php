@@ -1,16 +1,13 @@
 <?php get_header(); ?>
 
 <div id="middle">
-	<div class="wrapper">
-        
-         <div class="slideshow"><!--Slideshow-->
-            <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/placeholder-spotlight-image.png" alt="slides" />
-        
 
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
-
+            <div class="slideshow"><!--Slideshow-->
+                <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/severance8-web.jpg" alt="slides" />
+            </div>
 
 		<?php endwhile; ?>
         
@@ -18,11 +15,11 @@
             <h2 class="center">Not Found</h2>
             <p class="center">Sorry, but you are looking for something that isn't here.</p>
             
-        <?php endif; ?>          
+        <?php endif; ?>
+
+    <div class="wrapper">             
           
-        <aside id="aside-front"> 
-            <?php get_sidebar(); ?>
-        </aside>
+        <?php get_sidebar(); ?>       
 
 	</div> <!-- end .wrapper -->
  

@@ -15,12 +15,11 @@
 <!--Style sheets-->
 <link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen">
 
-<!-- call jquery for the toggle nav -->
-<script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
-
 <!-- THIS FUNCTION WILL GET THE URL ADDRESS TO FIN IT-->
 <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon-ssyc.ico" />
 
+<!-- call jquery for the toggle nav -->
+<script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
 <!-- End Toggle Menu Script -->
 
@@ -28,7 +27,7 @@
 <!--[if lt IE 9]>
 <script src="https://code.jquery.com/jquery-1.10.2.js">
 <link rel="stylesheet" type="text/css"
-href="css/stylesheet.css" />
+href="css/style.css" />
 <![endif]-->
 
 </head>

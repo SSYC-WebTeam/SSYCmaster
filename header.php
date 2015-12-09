@@ -18,10 +18,14 @@
 <!-- THIS FUNCTION WILL GET THE URL ADDRESS TO FIN IT-->
 <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon-ssyc.ico" />
 
-<!-- call jquery for the toggle nav -->
+<!-- call jquery for the login and toggle nav -->
 <script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
+
+<!-- call jquery for the login -->
+<script src="<?php bloginfo('template_directory') ?>/js/login.js"></script>
+
 <!-- End Toggle Menu Script -->
+<script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
 
 <!-- Remy Sharp Shim --> 
 <!--[if lt IE 9]>
@@ -43,9 +47,13 @@ href="css/style.css" />
     
     	<!-- LOGIN -->
     	<div class="login">
-            <?php include_once("login_widgets.php"); ?>
-    		<p>LOGIN<img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>            
-    	</div> <!-- end .login -->
+            <div class="login-open">
+    		    <p>LOGIN<img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>            
+    	    </div>
+            <div class="login-closed">
+                <?php dynamic_sidebar("login-widgets") ?>
+            </div>
+        </div> <!-- end .login -->
     
         <!-- LOGO -->
       	<a href="<?php bloginfo('url'); ?>"><img id="logo" src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/ssyc-logo.png" alt="logo" /></a>

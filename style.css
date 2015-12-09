@@ -140,11 +140,17 @@ footer {
 	margin-bottom: 0em;	
 }
 
+/*CODE FOR META SLIDER*/
 .slideshow {
 	width: 100%;	
 	object-position: center;
     object-fit: cover;
 }
+
+ul.slides {
+	margin-left: 0 !important;	
+}
+/* END META SLIDER*/
 
 #main-front {
 	float: right;

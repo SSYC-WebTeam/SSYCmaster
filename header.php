@@ -22,13 +22,6 @@
 <script src="<?php bloginfo('template_directory') ?>/js/jquery-1.10.2.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/toggle.js"></script> 
 <!-- End Toggle Menu Script -->
-
-<!-- Remy Sharp Shim --> 
-<!--[if lt IE 9]>
-<script src="https://code.jquery.com/jquery-1.10.2.js">
-<link rel="stylesheet" type="text/css"
-href="css/style.css" />
-<![endif]-->
     
     <?php wp_head(); ?>
 </head>

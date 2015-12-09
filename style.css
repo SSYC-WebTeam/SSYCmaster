@@ -429,6 +429,7 @@ header h1 span {
 	display: block;
 	text-align: right;
 	font-size: 115%;
+	cursor: pointer;
 }
 
 /* #NAV-MAIN */
@@ -620,7 +621,7 @@ header h1 span {
 	height: 18px;
 	line-height: 19px;
 	font-size: 15px;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	margin-right: 4px;
 	color: #FFF;
 	float: left;
@@ -642,7 +643,7 @@ header h1 span {
 	height: 18px;
 	line-height: 19px;
 	font-size: 15px;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	margin-right: 4px;
 	color: #FFF;
 	float: left;
@@ -738,7 +739,7 @@ header h1 span {
 	
 	#nav-footer a {
 		display: block;	
-		font-size: 130%;
+		/*font-size: 130%;*/
 		padding-right: .625em;
 	}
 	
@@ -750,6 +751,14 @@ header h1 span {
 	.sub-contact {
 		float: none;	
 		width: 100%;
+	}
+	
+	.soc-facebook{
+		width: 100%;
+		}
+		
+	.soc-instagram{
+	width: 100%;
 	}
 	
 }

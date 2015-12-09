@@ -9,13 +9,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 }
 add_action( 'init', 'register_my_menu' );
 
+//function register_sidebar() 
 if ( function_exists( 'register_sidebar') ) {
-    register_sidebar(array(       
-        'before_widget' => '<div>',
-        'after_widget' => '</div>',
-        'before_title' => '<h2>',
-        'after_title' => '</h2>' ));
-
     register_sidebar (array(
         'name' => __( 'Login Widget', 'widgets_init' ),
         'id' => 'login-widgets',
@@ -42,6 +37,7 @@ if ( function_exists( 'register_sidebar') ) {
 }
 add_action( 'init', 'widgets_init' );
 
+//function the_breadcrumb() 
 function the_breadcrumb() {
     global $post;   
     if (!is_home()) {

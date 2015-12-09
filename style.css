@@ -256,10 +256,6 @@ ul {
 	margin-left: 1.25em;	
 }
 
-ul.slides {
-	margin-left: 0 !important;	
-}
-
 ol {
 	margin-left: 1.75em;	
 }
@@ -466,13 +462,8 @@ header h1 span {
 	margin: 0.4375em 0 0 0;
 	float: left;
 	text-align: left;
-	width: 16.2%;
+	width: 16.66666666666667%;
 }
-
-#nav-main li#menu-item-74 {
-	width: 19%;	
-}
-
 
 #nav-main a {
 	display: inline;
@@ -525,11 +516,7 @@ header h1 span {
 	float: left;
 	/*text-align: center;*/
 	/*width: 16.66666666666667%;*/
-	width: 19.5%;
-}
-
-#nav-footer li#menu-item-36 {
-	width: 22%;	
+	width: 20%;
 }
 
 #nav-footer a {

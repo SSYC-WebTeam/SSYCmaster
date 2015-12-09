@@ -29,7 +29,8 @@
 <link rel="stylesheet" type="text/css"
 href="css/style.css" />
 <![endif]-->
-
+    
+    <?php wp_head(); ?>
 </head>
 
 <body id="front-template">

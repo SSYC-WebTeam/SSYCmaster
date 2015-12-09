@@ -129,6 +129,7 @@ footer {
 	width: 100%;	
 	object-position: center;
     object-fit: cover;
+    
 }
 
 #main-front {
@@ -358,7 +359,7 @@ header {
 }
 
 header {
-    background-image: url("http://localhost:8080/wp-content/uploads/2015/11/red-stripe-small.png");
+    background-image: url("<?phph bloginfo('url'); ?>/wp-content/uploads/2015/11/red-stripe-small.png");
     background-repeat: repeat-x;
     background-position: center top;
     position: relative;

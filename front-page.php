@@ -13,11 +13,7 @@
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
-            <div class="slideshow"><!--Slideshow-->               
-                <?php 
-                echo do_shortcode("[metaslider id=146]"); 
-                ?>               
-            </div>
+          
 		<?php endwhile; ?>
         
         <?php else : ?>

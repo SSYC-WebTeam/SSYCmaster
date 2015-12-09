@@ -256,6 +256,10 @@ ul {
 	margin-left: 1.25em;	
 }
 
+ul.slides {
+	margin-left: 0 !important;	
+}
+
 ol {
 	margin-left: 1.75em;	
 }

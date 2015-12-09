@@ -2,6 +2,14 @@
 
 <div id="middle">    
 
+       <div class="slideshow"><!--Slideshow-->
+           
+       		<?php 
+            echo do_shortcode("[metaslider id=211]"); 
+            ?>
+           
+        </div>
+    
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>

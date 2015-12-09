@@ -37,7 +37,7 @@
     	<!-- LOGIN -->
     	<div class="login">
             <?php include_once("login_widgets.php"); ?>
-    		<p>LOGIN<img class="arrow "src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/arrow-login-down.png" alt="down arrow" /></p>            
+    		<p>LOGIN<img class="arrow "src="<?php bloginfo('url'); ?>/images/arrow-login-down.png" alt="down arrow" /></p>            
     	</div> <!-- end .login -->
     
         <!-- LOGO -->

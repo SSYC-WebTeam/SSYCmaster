@@ -2,8 +2,23 @@
 /*  
 Theme Name: SSYC
 Description: Custom theme for Seattle Singles Yacht Club - 2015
-Version: 2.0
-Author: Maureen Crist
+Version: 3.0
+Author: SSYC Web Team
+last update: December 8th 2015
+*/
+
+/*
+Plugins installed:
+@Contact - Contact Form 7: https://wordpress.org/plugins/contact-form-7/
+@Event Calendar - The Events Calendar: https://wordpress.org/plugins/the-events-calendar
+@Updraft plus - UpdraftPlus - Backup/Restore: https://wordpress.org/plugins/updraftplus/
+@Wealther -  US Weather Widget: https://wordpress.org/plugins/us-weather-widget-willyweather/
+@Php - code widget: https://wordpress.org/plugins/php-code-widget/
+@Backup - BackUpWordPress: https://wordpress.org/plugins/backupwordpress/
+@Anti-spam - Akismet https://wordpress.org/plugins/akismet/
+@Search tool - Relevanssi https://wordpress.org/plugins/relevanssi/
+@SEO - Yoast SEO https://wordpress.org/plugins/wordpress-seo/
+@Flexslider - MetaSlide Responsive: https://wordpress.org/plugins/ml-slider/
 */
 
 body, body * {
@@ -129,7 +144,6 @@ footer {
 	width: 100%;	
 	object-position: center;
     object-fit: cover;
-    
 }
 
 #main-front {
@@ -257,10 +271,6 @@ ul {
 	margin-left: 1.25em;	
 }
 
-ul.slides {
-	margin-left: 0 !important;	
-}
-
 ol {
 	margin-left: 1.75em;	
 }
@@ -359,7 +369,7 @@ header {
 }
 
 header {
-    background-image: url("<?phph bloginfo('url'); ?>/wp-content/uploads/2015/11/red-stripe-small.png");
+    background-image: url("<?php bloginfo('url'); ?>/wp-content/uploads/2015/11/red-stripe-small.png");
     background-repeat: repeat-x;
     background-position: center top;
     position: relative;

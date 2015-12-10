@@ -372,10 +372,7 @@ header {
 	width: 100%;
 	overflow: hidden;
 	background-color: #280e5b;
-}
-
-header {
-    background-image: url("http://localhost:8080/wp-content/uploads/2015/11/red-stripe-small.png");
+    background-image: url('images/red-stripe-small.png');
     background-repeat: repeat-x;
     background-position: center top;
     position: relative;

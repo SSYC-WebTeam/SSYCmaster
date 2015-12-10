@@ -125,6 +125,23 @@ footer {
 	margin-bottom: 0em;	
 }
 
+/* login widget style */
+.login-closed {
+	background: #d40222;
+	position: relative;
+	top: -21px;
+	left:20px;
+    width: 300px;
+    padding: 10px;
+    border: solid #d40222;
+    margin: 25px;
+}
+
+.lwa-title {
+	color: #ffffff;
+}
+/* End login widget style*/
+
 .slideshow {
 	width: 100%;	
 	object-position: center;

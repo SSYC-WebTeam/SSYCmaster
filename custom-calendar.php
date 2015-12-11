@@ -1,3 +1,8 @@
+<?php
+/*
+Theme Name: Calendar Template
+*/
+?>
 <?php get_header(); ?>
 
 <body id="page-template">

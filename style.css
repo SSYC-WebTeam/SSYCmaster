@@ -321,6 +321,7 @@ em, i {
 #primary li.current_page_item a {
     
     font-weight: 400;
+	letter-spacing: -0.009em;
 }
 
 a:link,
@@ -473,7 +474,7 @@ header h1 span {
 	display: block;	
 }
 
-#nav-main li.current_page_item a {
+#nav-main li.current_page_item a, #nav-main li.current-page-ancestor a {
     color: #D40222;
 }
 

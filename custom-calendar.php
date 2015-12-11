@@ -1,6 +1,6 @@
 <?php
 /*
-Theme Name: Calendar Template
+Template Name: Calendar Template
 */
 ?>
 <?php get_header(); ?>

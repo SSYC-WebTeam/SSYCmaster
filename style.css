@@ -131,39 +131,28 @@ footer {
 	font-size: .9em;
 	padding: 8px 0;
 	padding: .5em 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     position: relative;
-}
-
-.login-open {
-    z-index: 5;
-    display: none;
-=======
-	position: relative;
-		
->>>>>>> Stashed changes
 }
 
 .login-open {
 	position: absolute;
 	z-index: 5;	
-=======
->>>>>>> Stashed changes
+
 }
 .login-closed {
 	background: #d40222;
 	position: absolute;
-	top: -21px;
-	left:20px;
+	top: 32px;
+	/*left:20px;*/
     width: 300px;
     padding: 10px;
     border: solid #d40222;
-    margin: 25px;
+    /*margin: 25px;*/
 }
 
 .lwa-title {
 	color: #ffffff;
+	font-size: .7em;
 }
 
 /* End login widget style*/

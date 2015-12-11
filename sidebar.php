@@ -4,10 +4,9 @@
         <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/calendar-icon.png" alt="calendar icon"/>
         <div class="textbox">
             <h3>UPCOMING EVENTS</h3>
-            <h4>Loret Lipsum</h4>
-            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
-            <h4>Quisque ultrices</h4>
-            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
+            
+           <?php get_sidebar('event-widgets'); ?>
+            
          </div> <!-- end .textbox-->  
     </div> <!-- end .one-third -->
 

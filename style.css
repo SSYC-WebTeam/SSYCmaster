@@ -132,6 +132,7 @@ footer {
 	padding: 8px 0;
 	padding: .5em 0;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     position: relative;
 }
 
@@ -147,8 +148,9 @@ footer {
 .login-open {
 	position: absolute;
 	z-index: 5;	
+=======
+>>>>>>> Stashed changes
 }
-
 .login-closed {
 	background: #d40222;
 	position: absolute;

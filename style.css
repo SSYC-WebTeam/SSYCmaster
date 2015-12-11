@@ -2,7 +2,7 @@
 /*  
 Theme Name: SSYC
 Description: Custom theme for Seattle Singles Yacht Club - 2015
-Version: 2.0
+Version: 3.0
 Author: Snoopy
 */
 
@@ -131,12 +131,16 @@ footer {
 	font-size: .9em;
 	padding: 8px 0;
 	padding: .5em 0;
-		
+    position: relative;
+}
+
+.login-open {
+        z-index: 5;
 }
 
 .login-closed {
 	background: #d40222;
-	position: relative;
+	position: absolute;
 	top: -21px;
 	left:20px;
     width: 300px;
@@ -316,11 +320,6 @@ strong, b {
 em, i {
 	font-family: Helvetica, Arial, san-serif;
 	font-style: italic;	
-}
-
-#primary li.current_page_item a {
-    
-    font-weight: 400;
 }
 
 a:link,

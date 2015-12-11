@@ -318,6 +318,11 @@ em, i {
 	font-style: italic;	
 }
 
+#primary li.current_page_item a {
+    
+    font-weight: 400;
+}
+
 a:link,
 a:visited {
 	text-decoration: none;

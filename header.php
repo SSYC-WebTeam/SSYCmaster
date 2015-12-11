@@ -6,6 +6,7 @@
 <!--Description meta-->
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex, nofollow"/>
+ <meta name="viewport" content="initial-scale=1"/>
 
 <!-- Remy Sharp Shim --> 
 <!--[if lt IE 9]>

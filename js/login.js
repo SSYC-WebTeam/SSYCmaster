@@ -8,7 +8,6 @@
 $(document).ready(function() {
 	$(".login-closed").hide();
 	$('.login-open').click(function() {
-	    $('.login-closed').toggle();
-	    return false;
+	    $('.login-closed').toggle();	    
 	});
 });

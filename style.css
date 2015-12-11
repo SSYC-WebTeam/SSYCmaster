@@ -131,12 +131,22 @@ footer {
 	font-size: .9em;
 	padding: 8px 0;
 	padding: .5em 0;
+<<<<<<< Updated upstream
     position: relative;
 }
 
 .login-open {
     z-index: 5;
     display: none;
+=======
+	position: relative;
+		
+>>>>>>> Stashed changes
+}
+
+.login-open {
+	position: absolute;
+	z-index: 5;	
 }
 
 .login-closed {
@@ -323,15 +333,13 @@ em, i {
 	font-style: italic;	
 }
 
-<<<<<<< HEAD
-=======
+
 #primary li.current_page_item a {
     
     font-weight: 400;
 	letter-spacing: -0.009em;
 }
 
->>>>>>> origin/master
 a:link,
 a:visited {
 	text-decoration: none;

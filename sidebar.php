@@ -5,7 +5,16 @@
         <div class="textbox">
             <h3>UPCOMING EVENTS</h3>
             
-           <?php get_sidebar('event-widgets'); ?>
+        <?php if ( is_active_sidebar( 'event-widgets' )) : ?>
+        <?php dynamic_sidebar( 'event-widgets' ); ?>
+    
+        <?php else : ?>
+            
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
+            <h4>Quisque ultrices</h4>
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
+        
+        <?php endif; ?>
             
          </div> <!-- end .textbox-->  
     </div> <!-- end .one-third -->

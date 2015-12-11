@@ -126,6 +126,14 @@ footer {
 }
 
 /* login widget style */
+.login {
+	color: #ffffff;
+	font-size: .9em;
+	padding: 8px 0;
+	padding: .5em 0;
+		
+}
+
 .login-closed {
 	background: #d40222;
 	position: relative;
@@ -140,6 +148,7 @@ footer {
 .lwa-title {
 	color: #ffffff;
 }
+
 /* End login widget style*/
 
 .slideshow {
@@ -376,14 +385,6 @@ header {
     background-repeat: repeat-x;
     background-position: center top;
     position: relative;
-}
-
-.login {
-	color: #ffffff;
-	font-size: .9em;
-	padding: 8px 0;
-	padding: .5em 0;
-		
 }
 
 .arrow {

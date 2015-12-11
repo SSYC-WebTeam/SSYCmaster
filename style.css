@@ -135,7 +135,8 @@ footer {
 }
 
 .login-open {
-        z-index: 5;
+    z-index: 5;
+    display: none;
 }
 
 .login-closed {
@@ -322,6 +323,15 @@ em, i {
 	font-style: italic;	
 }
 
+<<<<<<< HEAD
+=======
+#primary li.current_page_item a {
+    
+    font-weight: 400;
+	letter-spacing: -0.009em;
+}
+
+>>>>>>> origin/master
 a:link,
 a:visited {
 	text-decoration: none;
@@ -472,7 +482,7 @@ header h1 span {
 	display: block;	
 }
 
-#nav-main li.current_page_item a {
+#nav-main li.current_page_item a, #nav-main li.current-page-ancestor a {
     color: #D40222;
 }
 

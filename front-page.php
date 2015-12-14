@@ -2,17 +2,17 @@
 
 <div id="middle">        
         
+            <div class="slideshow"><!--Slideshow-->       
+                <?php
+                    if (is_front_page() || is_home()) {
+                        echo do_shortcode("[metaslider id=211]"); 
+                    }
+                ?>       
+            </div>
+
         <?php if (have_posts()) : ?>
         
         <?php while (have_posts()) : the_post(); ?>
-
-            <div class="slideshow"><!--Slideshow-->       
-            <?php
-                if (is_front_page() || is_home()) {
-                    echo do_shortcode("[metaslider id=211]"); 
-                }
-            ?>       
-            </div>
           
         <?php endwhile; ?>
         

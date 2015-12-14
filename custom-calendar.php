@@ -17,9 +17,7 @@ Template Name: Calendar Template
                 
              <aside id="primary">
              
-                 
-                 
-                 
+                             
             </aside> <!-- end #primary -->                                
             
             <div id="content">    

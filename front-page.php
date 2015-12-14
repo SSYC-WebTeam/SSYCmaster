@@ -23,7 +23,7 @@
         
 	<div class="wrapper">
             
-            <?php get_sidebar('frontpage'); ?>
+            <?php get_sidebar('event-wiget'); ?>
          
 	</div> <!--end .wrapper-->
 

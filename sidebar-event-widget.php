@@ -5,8 +5,8 @@
         <div class="textbox">
             <h3>UPCOMING EVENTS</h3>
             
-        <?php if ( is_active_sidebar( 'event-widgets' )) : ?>
-        <?php dynamic_sidebar( 'event-widgets' ); ?>
+        <?php if ( is_active_sidebar( 'event-widget' )) : ?>
+        <?php dynamic_sidebar( 'event-widget' ); ?>
     
         <?php else : ?>
             

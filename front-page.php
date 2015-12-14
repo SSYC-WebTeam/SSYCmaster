@@ -23,7 +23,7 @@
         
 	<div class="wrapper">
             
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('frontpage'); ?>
          
 	</div> <!--end .wrapper-->
 

@@ -2,7 +2,7 @@
 /*  
 Theme Name: SSYC
 Description: Custom theme for Seattle Singles Yacht Club - 2015
-Version: 3.0
+Version: 3.1
 Author: Snoopy
 */
 
@@ -140,13 +140,13 @@ footer {
 
 }
 .login-closed {
-	background: #d40222;
+	background: #D42027 none repeat scroll 0% 0%;
 	position: absolute;
 	top: 32px;
 	/*left:20px;*/
     width: 300px;
     padding: 10px;
-    border: solid #d40222;
+border: medium solid #D42027;
     /*margin: 25px;*/
 }
 
@@ -401,8 +401,9 @@ header {
 }
 
 .arrow {
-	width: 16px;
-	width: 1em;	
+	width: .6em;
+	margin-left: 4px;
+	margin-bottom: 3px;
 }
 
 header h1 span {
@@ -890,7 +891,7 @@ Form
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08) inset;
     border: 1px solid #CFD9DB;
     height: 55px;
-    width: 61%;
+/*    width: 61%;*/
 	font-size: 1rem;
 	padding-left: 9px;
 }
@@ -902,7 +903,7 @@ Form
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08) inset;
     border: 1px solid #CFD9DB;
     height: 155px;
-    width: 61%;
+/*    width: 61%;*/
 	font-size: 1rem;
 	padding-left: 9px;
 	padding-top: 10px;

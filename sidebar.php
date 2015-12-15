@@ -2,13 +2,12 @@
     <!-- #left sidebar -->
     <div class="one-third-left">
         <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/calendar-icon.png" alt="calendar icon"/>
-         <div class="textbox">
+        <div class="textbox">
             <h3>UPCOMING EVENTS</h3>
-            <h5><?php dynamic_sidebar( 'front-event-widgets' ); ?></h5>
-        
-    
-              
-                       
+            <h4>Loret Lipsum</h4>
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
+            <h4>Quisque ultrices</h4>
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
          </div> <!-- end .textbox-->  
     </div> <!-- end .one-third -->
 
@@ -17,10 +16,11 @@
         <div class="one-third-middle">
         <img src="<?php bloginfo('url'); ?>/wp-content/themes/SSYCmaster/images/news-icon.png" alt="news-icon" />
         <div class="textbox">
-          <h3>RECENT NEWS</h3>
-          <h5><?php dynamic_sidebar( 'front-news-widgets' ); ?></h5>
-                             
-                 
+            <h3>RECENT NEWS</h3>
+            <h4>Loret Lipsum</h4>
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
+            <h4>Quisque ultrices</h4>
+            <p>Lorem ipsum dolor sit amet, iisque imperdiet definiebas id nam imperdiet. </p>
          </div> <!-- end .textbox-->  
         </div> <!-- end .one-third middle -->
 

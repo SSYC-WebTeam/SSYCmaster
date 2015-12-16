@@ -13,7 +13,7 @@
             <br />            
         </div>
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('event-widget'); ?>
 
     </div> <!--end .wrapper-->
 

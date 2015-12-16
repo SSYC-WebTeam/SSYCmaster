@@ -28,7 +28,7 @@
                 <p class="center">Sorry, but you are looking for something that isn't here.</p>               
             <?php endif; ?>
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar('event-widget'); ?>
         
     </div> <!-- end #wrapper --> 
 

@@ -18,7 +18,11 @@ Template Name: Event Page Template
              </div> <!-- #breadcrumbs -->
                 
 <aside id="primary">
-                
+
+<!-- Removing this wrapper class will break the claendar javascript, please avoid and extend as needed -->
+
+<div class="tribe-mini-calendar-wrapper">
+    
 <?php
 /**
  * Events Pro Mini Calendar Widget
@@ -37,10 +41,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 $args = tribe_events_get_mini_calendar_args();
 
 ?>
-
-<!-- Removing this wrapper class will break the claendar javascript, please avoid and extend as needed -->
-
-<div class="tribe-mini-calendar-wrapper">
 
 	<!-- Grid -->
 	<?php
@@ -67,22 +67,7 @@ $args = tribe_events_get_mini_calendar_args();
 	}
 	?>
     
-</div>
-    
-<?php
-/**
- * Mini Calendar List Loop
- * This file sets up the structure for the list loop
- *
- * Override this template in your own theme by creating a file at [your-theme]/tribe-events/pro/widgets/mini-calendar/list.php
- *
- * @package TribeEventsCalendar
- *
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '-1' );
-} ?>
+</div><!-- .tribe-mini-calendar-list-wrapper -->
 
 <div class="tribe-mini-calendar-list-wrapper">
 	<div class="tribe-events-loop">

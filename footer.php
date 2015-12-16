@@ -1,12 +1,9 @@
 <!-- footer starts here -->		
 <footer>	
 
-	
-
+    <div class="wrapper">
      	<!-- NAV FOOTER -->    
         <nav id="nav-footer">
-        
-        	<div class="wrapper">
             
             	<div class="contact">
                     <ul>
@@ -28,11 +25,10 @@
                     'theme_location' => 'footer-menu' ,
                     'menu' => 'Footer Menu' ,
                     'container'  => 'ul' )); ?> 
-                    
-
-			</div> <!-- end .wrapper -->
+        
 
         </nav> <!-- end #nav-footer -->
+    </div> <!-- end .wrapper -->
         
         <div id="copyright">
         	<p><span class="small">&copy;<?=date('Y')?> All rights reserved.</span></p>

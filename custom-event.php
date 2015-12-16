@@ -67,6 +67,8 @@ $args = tribe_events_get_mini_calendar_args();
 	}
 	?>
     
+</div>
+    
 <?php
 /**
  * Mini Calendar List Loop
@@ -98,10 +100,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	</div><!-- .tribe-events-loop -->
 </div> <!-- .tribe-mini-calendar-list-wrapper -->
-    
-</div>
-                   
-    </aside> <!-- end #primary -->                                
+                       
+</aside> <!-- end #primary -->                                
             
             <div id="content">    
                	<?php if (have_posts()) : ?>
@@ -121,7 +121,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                 
                 <?php endif; ?>
         
-                </div> <!-- end #content -->  
+            </div> <!-- end #content -->  
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->

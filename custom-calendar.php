@@ -55,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php tribe_get_template_part( 'pro/map/gmap-container' ) ?>
 
 <!-- Tribe Bar -->
-<?php tribe_get_template_part( 'modules/bar' ); ?>
+<?php tribe_get_template_part( 'pro/widgets/list' ); ?>
 
 
 <div class="tribe-clear"></div>            
@@ -68,7 +68,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                 
                 <?php while (have_posts()) : the_post(); ?>
                     
-        
                 <!--post-->
                 <?php the_content();?>
                 

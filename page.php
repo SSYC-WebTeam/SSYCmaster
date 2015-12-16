@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<body id="page-template">
-
      <div id="middle">
      
          <div class="wrapper">
@@ -45,6 +43,5 @@
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->
-</body><!--end page-template-->
 
 <?php get_footer(); ?>

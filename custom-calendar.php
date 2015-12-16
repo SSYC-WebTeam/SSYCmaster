@@ -5,8 +5,6 @@ Template Name: Calendar Template
 ?>
 <?php get_header(); ?>
 
-<div id="page-template">
-
      <div id="middle">
      
          <div class="wrapper">
@@ -88,6 +86,5 @@ if ( ! defined( 'ABSPATH' ) ) {
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->
-</div><!--end page-template-->
 
 <?php get_footer(); ?>

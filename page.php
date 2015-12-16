@@ -39,7 +39,7 @@
                 
                 <?php endif; ?>
         
-                </div> <!-- end #content -->  
+            </div> <!-- end #content -->  
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->

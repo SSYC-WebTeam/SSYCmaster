@@ -75,7 +75,6 @@ body {
 }
 
 #primary {
-	width: 300px;
 	width: 31.914893617021%; /* 300px target element / 940px parent element = 31.914893617021% */
 	float: left;	
 	padding: 20px;

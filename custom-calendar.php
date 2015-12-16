@@ -5,7 +5,7 @@ Template Name: Calendar Template
 ?>
 <?php get_header(); ?>
 
-<body id="page-template">
+<div id="page-template">
 
      <div id="middle">
      
@@ -18,6 +18,23 @@ Template Name: Calendar Template
              </div> <!-- #breadcrumbs -->
                 
 <aside id="primary">
+    
+<div class="tribe-mini-calendar-list-wrapper">
+	<div class="tribe-events-loop">
+
+		<?php while ( have_posts() ) : the_post(); ?>
+			<?php do_action( 'tribe_events_mini_cal_list_inside_before_loop' ); ?>
+
+			<!-- Event  -->
+			<div class="<?php tribe_events_event_classes() ?>">
+				<?php tribe_get_template_part( 'pro/widgets/modules/single-event' ) ?>
+			</div>
+
+			<?php do_action( 'tribe_events_mini_cal_list_inside_after_loop' ); ?>
+		<?php endwhile; ?>
+
+	</div><!-- .tribe-events-loop -->
+</div> <!-- .tribe-mini-calendar-list-wrapper -->
                 
 <?php
 /**
@@ -45,25 +62,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <!-- Main Events Content -->
 <?php tribe_get_template_part( 'pro/map/content' ) ?>
 
-<div class="tribe-clear"></div>
-    
-<div class="tribe-mini-calendar-list-wrapper">
-	<div class="tribe-events-loop">
-
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php do_action( 'tribe_events_mini_cal_list_inside_before_loop' ); ?>
-
-			<!-- Event  -->
-			<div class="<?php tribe_events_event_classes() ?>">
-				<?php tribe_get_template_part( 'pro/widgets/modules/single-event' ) ?>
-			</div>
-
-			<?php do_action( 'tribe_events_mini_cal_list_inside_after_loop' ); ?>
-		<?php endwhile; ?>
-
-	</div><!-- .tribe-events-loop -->
-</div> <!-- .tribe-mini-calendar-list-wrapper -->
-             
+<div class="tribe-clear"></div>            
                     
 </aside> <!-- end #primary -->                                
             
@@ -89,6 +88,6 @@ if ( ! defined( 'ABSPATH' ) ) {
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->
-</body><!--end page-template-->
+</div><!--end page-template-->
 
 <?php get_footer(); ?>

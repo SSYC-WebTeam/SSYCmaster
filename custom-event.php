@@ -5,7 +5,7 @@ Template Name: Event Page Template
 ?>
 <?php get_header(); ?>
 
-<body id="page-template">
+<div id="page-template">
 
      <div id="middle">
      
@@ -110,6 +110,6 @@ $args = tribe_events_get_mini_calendar_args();
      	
         </div> <!-- end .wrapper -->                         
     </div> <!-- end #middle -->
-</body><!--end page-template-->
+</div><!--end page-template-->
 
 <?php get_footer(); ?>

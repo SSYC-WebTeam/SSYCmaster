@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Front Page Template
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="middle">        

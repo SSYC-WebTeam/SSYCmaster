@@ -12,6 +12,8 @@ Template Name: Calendar Template
              <div id="breadcrumbs">
                  
                  <?php the_breadcrumb(); ?>
+                 
+                 
       
              </div> <!-- #breadcrumbs -->
                 
